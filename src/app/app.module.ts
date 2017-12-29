@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ExpressionsComponent } from './expressions/expressions.component';
@@ -8,6 +9,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { TwoWayComponent } from './two-way/two-way.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
     PropertyBindingComponent,
     AttributeBindingComponent,
     ClassBindingComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    TwoWayComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
