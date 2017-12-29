@@ -11,6 +11,7 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 import { SimpleComponent } from './simple/simple.component';
+import { UnderlineDirective } from './underline.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SimpleComponent } from './simple/simple.component';
     ClassBindingComponent,
     StyleBindingComponent,
     TwoWayComponent,
-    SimpleComponent
+    SimpleComponent,
+    UnderlineDirective
   ],
   imports: [
     BrowserModule,
