@@ -6,6 +6,7 @@ import { ExpressionsComponent } from './expressions/expressions.component';
 import { ClickComponent } from './click/click.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
+import { ClassBindingComponent } from './class-binding/class-binding.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { AttributeBindingComponent } from './attribute-binding/attribute-binding
     ExpressionsComponent,
     ClickComponent,
     PropertyBindingComponent,
-    AttributeBindingComponent
+    AttributeBindingComponent,
+    ClassBindingComponent
   ],
   imports: [
     BrowserModule
