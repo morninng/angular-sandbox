@@ -10,6 +10,7 @@ import { AttributeBindingComponent } from './attribute-binding/attribute-binding
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TwoWayComponent } from './two-way/two-way.component';
+import { SimpleComponent } from './simple/simple.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TwoWayComponent } from './two-way/two-way.component';
     AttributeBindingComponent,
     ClassBindingComponent,
     StyleBindingComponent,
-    TwoWayComponent
+    TwoWayComponent,
+    SimpleComponent
   ],
   imports: [
     BrowserModule,
