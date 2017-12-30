@@ -18,6 +18,7 @@ import { SimpleComponent } from './simple/simple.component';
 import { SumComponent } from './sum/sum.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ChildComponent } from './child/child.component';
     UnderlineDirective,
     SumComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    NgClassComponent
   ],
   imports: [
     BrowserModule,
