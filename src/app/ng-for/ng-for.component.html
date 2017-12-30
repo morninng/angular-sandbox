@@ -1,0 +1,21 @@
+<ul>
+  <li *ngFor="let directive of directives">{{ directive }}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let directive of directives; index as idx;">
+    {{idx}} - {{ directive }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let directive of directives; even as isEven; odd as isOdd;">
+    <div [ngClass]="{ 'even': isEven, 'odd': isOdd }">{{ directive }}</div>
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let directive of directives; first as isFirst; last as isLast;">
+    <div [ngClass]="{ 'first':isFirst, 'last':isLast }">{{ directive }}</div>
+  </li>
+</ul>

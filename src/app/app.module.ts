@@ -20,6 +20,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgForComponent } from './ng-for/ng-for.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     ParentComponent,
     ChildComponent,
     NgClassComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,
