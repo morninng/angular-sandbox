@@ -16,6 +16,8 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 import { SimpleComponent } from './simple/simple.component';
 import { SumComponent } from './sum/sum.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { SumComponent } from './sum/sum.component';
     TwoWayComponent,
     SimpleComponent,
     UnderlineDirective,
-    SumComponent
+    SumComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
