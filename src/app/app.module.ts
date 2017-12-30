@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+import { UnderlineDirective } from './underline.directive';
+
+import { CalcService } from './calc.service';
+
 import { AppComponent } from './app.component';
 import { ExpressionsComponent } from './expressions/expressions.component';
 import { ClickComponent } from './click/click.component';
@@ -11,7 +15,7 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 import { SimpleComponent } from './simple/simple.component';
-import { UnderlineDirective } from './underline.directive';
+import { SumComponent } from './sum/sum.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +28,16 @@ import { UnderlineDirective } from './underline.directive';
     StyleBindingComponent,
     TwoWayComponent,
     SimpleComponent,
-    UnderlineDirective
+    UnderlineDirective,
+    SumComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    CalcService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
