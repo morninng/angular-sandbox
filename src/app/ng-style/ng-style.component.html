@@ -1,0 +1,7 @@
+<p [ngStyle]="{ 'font-size': '30px' }">NgStyle Sample</p>
+
+<label><input type="radio" name="size" value="30" [(ngModel)]="check1">30px</label>
+<label><input type="radio" name="size" value="50" [(ngModel)]="check1">50px</label>
+<p [ngStyle]="{ 'font-size': check1 + 'px' }">NgStyle Sample</p>
+
+<p [ngStyle]="style1">NgStyle Sample</p>

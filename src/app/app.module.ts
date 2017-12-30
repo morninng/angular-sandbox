@@ -19,6 +19,7 @@ import { SumComponent } from './sum/sum.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NgClassComponent } from './ng-class/ng-class.component';
     SumComponent,
     ParentComponent,
     ChildComponent,
-    NgClassComponent
+    NgClassComponent,
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,
