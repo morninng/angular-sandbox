@@ -2,18 +2,18 @@ sudo: required
 dist: trusty
 language: node_js
 node_js:
-  - '9.3.0'
-addons:
+- 9.3.0
+addons: 
 apt:
   sources:
-    - google-chrome
+  - google-chrome
   packages:
-    - google-chrome-stable
-    - google-chrome-beta
+  - google-chrome-stable
+  - google-chrome-beta
 before_install:
-  - export CHROME_BIN=chromium-browser
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+- export CHROME_BIN=chromium-browser
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
 before_script:
 - npm install -g angular-cli
 - npm install -g karma
@@ -23,7 +23,7 @@ script: karma start config/karma.conf.js --single-run
 deploy:
   provider: heroku
   api_key:
-    secure: AGCEnlk/WRt0iWaVVa+QawOo3P/xZ7/xAVpDcJg9lw/36+QC+TO78RDy9K8jq/+cDHOYHp8JZPh3A0mKx8Zl97zD5VMgDcarsJWH4hJ8K0on7/b4GEhvxNWr6I+ZyPXmmDdCfzItn9lE3qVz6LjUt0ToOXgoPPbMrEy63ieAYPwcfsdo8FBbjOCspJdDAtV8YjVENFOkKjvgsgJHgeS/ruVweaF06Hy/dE/Gmzby6EEqQ/DKcBWW0IapgH+zIEQlLkCMSu9c669/RULX+SAm6FRye/uwTPgPMfJ0YO6g/PPWLM01BAe/rXvec/eLJfDwRbS/CW2CTAki6yRhWBh33bJdBMBOAK9chDklqpq1kKKL/6QbJDBvisDhsJry0NG+n7SphiHfyiiTeRBDU65kZXT17BZ5hdlmWVoU5vyjPWnpxPwt3uI1IsRh83yaEaNLV8v/GnNCMM84qPvE+C1hrtMT4onWVB6gBTVuOlG7X8ohBZbQN94524skjbNXSPDOWC+rEyOhzxijcgR1lJMawpm+9oODZd73u+l2aPtViqJFgEZjP/v5KfbkimAD6LXZBumUV7e/EGngNH03/b2k9do7AFsbVI5GGdcPcO+AkmIqx8QAGecSN1IV5mGH8uYj8cvmGhRxU6xb9/vE0ovhInKtlQbSoCOqsgO12v3Or5w=
+    secure: Oiuri4ttOo3oHAqF0esOM4Bbu2q9wLv3Ki2kUm9zhqm50ZEXz9LSBdIrtnrl18oRw+PRr+4oHVxTXUIcjDEgI9I200nKOtlAQf1QYG6ZwA3uzYXu0fqFM/HPTyp2XO/IaEuhBHMjWtuPYN1I3HTk5LTZRc78LaU20q9PucMSOFtHjHHQrWHihhwlPvh2zcHFuX7JgThBcanHiqs3baitkjoYRqEkBfnx4wZO1ezmwoGvODMdlBm4BXVQn6uZMCekwqACKGY8OK9/4fISif1LpoQJ1CupjcSm5KSnLHk0lUP2MyFqxuOEgCfre39GhNs/9ZvgNrrZODbRNHAq/Nv17S6Rpv61333YGkLiy4xWZrsjszLeDckYPhWPooLiOhifZTOfFtuIi11POJvU3YUiQSMS67fgyDJTfW0gXrih5A7vzzIcp57xzQa5u7CKoUGsT2u49wwKIJoz6DWOjCLD9we1xLDL5qWAEYTrF7vr+QzQ3RC0w3i90EE9ukqsjL2pTvrruNAKWiJU4NT00p42vQWuUvRGB7X9kuot/S5Vraa292TE3+PgphqFINY0j0klaDVaHeRFygND6ZNs6WDLWLQcIQwcGoZy8oD0tDlKWBYPGV0ScQD77inVTm5RAJaqZ3GbOe/Q9n/spVmcERakGdz+TNr+8jixImfLTjjdfRg=
   app: angular-sandbox
   on:
     repo: cloudliner/angular-sandbox
