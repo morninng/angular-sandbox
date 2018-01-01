@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './ng-class.component.html',
   styleUrls: ['./ng-class.component.css']
 })
-export class NgClassComponent { }
+export class NgClassComponent {
+  // for production build
+  sample3;
+  sample4;
+}

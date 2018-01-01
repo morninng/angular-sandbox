@@ -4,4 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-ng-switch',
   templateUrl: './ng-switch.component.html'
 })
-export class NgSwitchComponent { }
+export class NgSwitchComponent {
+  model1;
+}
