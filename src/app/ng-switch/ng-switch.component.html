@@ -1,0 +1,15 @@
+<label>
+  <input type="radio" name="switch" value="morning" [(ngModel)]="model1">あさ
+</label>
+<label>
+  <input type="radio" name="switch" value="noon" [(ngModel)]="model1">ひる
+</label>
+<label>
+  <input type="radio" name="switch" value="night" [(ngModel)]="model1">よる
+</label>
+<div [ngSwitch]="model1">
+  <div *ngSwitchCase="'morning'">おはようございます</div>
+  <div *ngSwitchCase="'noon'">こんにちは</div>
+  <div *ngSwitchCase="'night'">こんばんは</div>
+  <div *ngSwitchDefault>えらんでください</div>
+</div>

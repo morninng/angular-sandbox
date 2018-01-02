@@ -18,6 +18,11 @@ import { SimpleComponent } from './simple/simple.component';
 import { SumComponent } from './sum/sum.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgForComponent } from './ng-for/ng-for.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,12 @@ import { ChildComponent } from './child/child.component';
     UnderlineDirective,
     SumComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    NgClassComponent,
+    NgStyleComponent,
+    NgForComponent,
+    NgIfComponent,
+    NgSwitchComponent
   ],
   imports: [
     BrowserModule,

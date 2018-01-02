@@ -1,0 +1,6 @@
+<button (click)="model1 = !model1">Click Me</button>
+<p *ngIf="model1">Hello Angular !!</p>
+
+<button (click)="model2 = !model2">Click Me</button>
+<div *ngIf="model2; else elseCase">Truthy ケース</div>
+<ng-template #elseCase><div>Falsy ケース</div></ng-template>

@@ -1,0 +1,13 @@
+<button [ngClass]="'btn btn-default'">ngClass Sample 1</button>
+
+<button [ngClass]="['btn', 'btn-info']">ngClass Sample 2</button>
+
+<button
+  [ngClass]="{ 'btn btn-default': sample3 }"
+  (click)="sample3 = !sample3">ngClass Sample 3
+</button>
+
+<button class="btn"
+  [ngClass]="{ 'btn-default': !sample4, 'btn-info': sample4 }"
+  (click)="sample4 = !sample4">ngClass Sample 4
+</button>
