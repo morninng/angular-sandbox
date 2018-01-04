@@ -30,6 +30,11 @@ import { SelectorComponent } from './selector/selector.component';
 import { InputsCounterComponent } from './inputs/inputs-counter.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { CounterColorDirective } from './inputs/counter-color.directive';
+import { OutputsCounterComponent } from './outputs/outputs-counter.component';
+import { OutputsComponent } from './outputs/outputs.component';
+import { HostComponent } from './host/host.component';
+import { ToggleColorComponent } from './host/toggle-color.component';
+import { ResizeComponent } from './host/resize.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +61,12 @@ import { CounterColorDirective } from './inputs/counter-color.directive';
     SelectorComponent,
     InputsCounterComponent,
     InputsComponent,
-    CounterColorDirective
+    CounterColorDirective,
+    OutputsCounterComponent,
+    OutputsComponent,
+    HostComponent,
+    ToggleColorComponent,
+    ResizeComponent
   ],
   imports: [
     BrowserModule,
