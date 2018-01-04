@@ -29,5 +29,3 @@ deploy:
     master: angular-sandbox
     staging: staging-angular-sandbox
   skip_cleanup: true
-  on:
-    repo: cloudliner/angular-sandbox
