@@ -30,6 +30,8 @@ import { SelectorComponent } from './selector/selector.component';
 import { InputsCounterComponent } from './inputs/inputs-counter.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { CounterColorDirective } from './inputs/counter-color.directive';
+import { OutputsCounterComponent } from './outputs/outputs-counter.component';
+import { OutputsComponent } from './outputs/outputs.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import { CounterColorDirective } from './inputs/counter-color.directive';
     SelectorComponent,
     InputsCounterComponent,
     InputsComponent,
-    CounterColorDirective
+    CounterColorDirective,
+    OutputsCounterComponent,
+    OutputsComponent
   ],
   imports: [
     BrowserModule,
