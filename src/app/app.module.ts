@@ -32,6 +32,8 @@ import { InputsComponent } from './inputs/inputs.component';
 import { CounterColorDirective } from './inputs/counter-color.directive';
 import { OutputsCounterComponent } from './outputs/outputs-counter.component';
 import { OutputsComponent } from './outputs/outputs.component';
+import { HostComponent } from './host/host.component';
+import { ToggleColorComponent } from './host/toggle-color.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { OutputsComponent } from './outputs/outputs.component';
     InputsComponent,
     CounterColorDirective,
     OutputsCounterComponent,
-    OutputsComponent
+    OutputsComponent,
+    HostComponent,
+    ToggleColorComponent
   ],
   imports: [
     BrowserModule,
