@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Ch04Module } from './ch04/ch04.module';
 
 import { UnderlineDirective } from './underline.directive';
 
@@ -49,7 +50,8 @@ import { PipesComponent } from './pipes/pipes.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    Ch04Module
   ],
   providers: [
     CalcService
