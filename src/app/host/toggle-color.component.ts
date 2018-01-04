@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-toggle-color',
   host: {
+    '(click)': 'onClick($event)',
     '[class.red]': 'isRed',
     '[class.blue]': 'isBlue'
   },
@@ -13,7 +14,7 @@ export class ToggleColorComponent {
   isBlue = true;
 
   onClick(ev) {
-    ev.preventDefault();
+    console.log(ev.target);
     this.isRed = !this.isRed;
     this.isBlue = !this.isBlue;
   }
