@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-inputs',
   template: `
     <h2>Inputs</h2>
-    <app-inputs-counter [count]="count"></app-inputs-counter>
+    <app-inputs-counter [count]="count" [appCounterColor]="'salmon'"></app-inputs-counter>
   `
 })
 export class InputsComponent implements OnInit {
