@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
     <app-resize></app-resize>
   `,
   styles: [`
+    [role=button] { cursor: pointer; }
     .red { color: red; }
     .blue { color: blue; }
   `]

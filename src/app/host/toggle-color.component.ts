@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   host: {
     '(click)': 'onClick($event)',
     '[class.red]': 'isRed',
-    '[class.blue]': 'isBlue'
+    '[class.blue]': 'isBlue',
+    'role': 'button'
   },
   template: '<div>Toggle color</div>'
 })
@@ -14,7 +15,7 @@ export class ToggleColorComponent {
   isBlue = true;
 
   onClick(ev) {
-    console.log(ev.target);
+    ev.preventDefault();
     this.isRed = !this.isRed;
     this.isBlue = !this.isBlue;
   }
