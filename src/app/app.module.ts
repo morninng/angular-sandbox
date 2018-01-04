@@ -25,9 +25,9 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { PipesComponent } from './pipes/pipes.component';
-import { SelectorMyAppComponent } from './selector-my-app/selector-my-app.component';
+import { SelectorMyAppComponent } from './selector/selector-my-app.component';
 import { SelectorComponent } from './selector/selector.component';
-import { InputsCounterComponent } from './inputs-counter/inputs-counter.component';
+import { InputsCounterComponent } from './inputs/inputs-counter.component';
 import { InputsComponent } from './inputs/inputs.component';
 
 @NgModule({
