@@ -35,6 +35,8 @@ import { OutputsComponent } from './outputs/outputs.component';
 import { HostComponent } from './host/host.component';
 import { ToggleColorComponent } from './host/toggle-color.component';
 import { ResizeComponent } from './host/resize.component';
+import { ExportAsComponent } from './export-as/export-as.component';
+import { CounterComponent } from './export-as/counter.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +68,9 @@ import { ResizeComponent } from './host/resize.component';
     OutputsComponent,
     HostComponent,
     ToggleColorComponent,
-    ResizeComponent
+    ResizeComponent,
+    ExportAsComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
