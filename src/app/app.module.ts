@@ -38,6 +38,10 @@ import { ResizeComponent } from './host/resize.component';
 import { ExportAsComponent } from './export-as/export-as.component';
 import { CounterComponent } from './export-as/counter.component';
 import { ProvidersComponent } from './providers/providers.component';
+import { ViewProvidersContainerComponent } from './view-providers/view-providers-container.component';
+import { ViewChildComponent } from './view-providers/view-child.component';
+import { ContentChildComponent } from './view-providers/content-child.component';
+import { ViewProvidersComponent } from './view-providers/view-providers.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +76,11 @@ import { ProvidersComponent } from './providers/providers.component';
     ResizeComponent,
     ExportAsComponent,
     CounterComponent,
-    ProvidersComponent
+    ProvidersComponent,
+    ViewProvidersContainerComponent,
+    ViewChildComponent,
+    ContentChildComponent,
+    ViewProvidersComponent
   ],
   imports: [
     BrowserModule,
