@@ -37,6 +37,7 @@ import { ToggleColorComponent } from './host/toggle-color.component';
 import { ResizeComponent } from './host/resize.component';
 import { ExportAsComponent } from './export-as/export-as.component';
 import { CounterComponent } from './export-as/counter.component';
+import { ProvidersComponent } from './providers/providers.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { CounterComponent } from './export-as/counter.component';
     ToggleColorComponent,
     ResizeComponent,
     ExportAsComponent,
-    CounterComponent
+    CounterComponent,
+    ProvidersComponent
   ],
   imports: [
     BrowserModule,
