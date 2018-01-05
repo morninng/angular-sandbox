@@ -42,6 +42,8 @@ import { ViewProvidersContainerComponent } from './view-providers/view-providers
 import { ViewChildComponent } from './view-providers/view-child.component';
 import { ContentChildComponent } from './view-providers/content-child.component';
 import { ViewProvidersComponent } from './view-providers/view-providers.component';
+import { ChangeDetectionOnPushComponent } from './change-detection/change-detection-on-push.component';
+import { ChangeDetectionOnPushChildComponent } from './change-detection/change-detection-on-push-child.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +82,9 @@ import { ViewProvidersComponent } from './view-providers/view-providers.componen
     ViewProvidersContainerComponent,
     ViewChildComponent,
     ContentChildComponent,
-    ViewProvidersComponent
+    ViewProvidersComponent,
+    ChangeDetectionOnPushComponent,
+    ChangeDetectionOnPushChildComponent
   ],
   imports: [
     BrowserModule,
