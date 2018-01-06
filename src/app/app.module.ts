@@ -47,6 +47,7 @@ import { TemplateComponent } from './template/template.component';
 import { TemplateUrlComponent } from './template/template-url.component';
 import { StylesComponent } from './styles/styles.component';
 import { StyleUrlsComponent } from './styles/style-urls.component';
+import { InterpolationComponent } from './interpolation/interpolation.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +88,8 @@ import { StyleUrlsComponent } from './styles/style-urls.component';
     TemplateComponent,
     TemplateUrlComponent,
     StylesComponent,
-    StyleUrlsComponent
+    StyleUrlsComponent,
+    InterpolationComponent
   ],
   imports: [
     BrowserModule,
