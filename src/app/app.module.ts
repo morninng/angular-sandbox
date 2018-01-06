@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Ch04Module } from './ch04/ch04.module';
 import { ViewProvidersModule } from './view-providers/view-providers.module';
+import { ChangeDetectionModule } from './change-detection/change-detection.module';
 import { QueriesModule } from './queries/queries.module';
 import { AnimationsModule } from './animations/animations.module';
 
@@ -41,8 +42,6 @@ import { ResizeComponent } from './host/resize.component';
 import { ExportAsComponent } from './export-as/export-as.component';
 import { CounterComponent } from './export-as/counter.component';
 import { ProvidersComponent } from './providers/providers.component';
-import { ChangeDetectionOnPushComponent } from './change-detection/change-detection-on-push.component';
-import { ChangeDetectionOnPushChildComponent } from './change-detection/change-detection-on-push-child.component';
 import { TemplateComponent } from './template/template.component';
 import { TemplateUrlComponent } from './template/template-url.component';
 import { StylesComponent } from './styles/styles.component';
@@ -83,8 +82,6 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
     ExportAsComponent,
     CounterComponent,
     ProvidersComponent,
-    ChangeDetectionOnPushComponent,
-    ChangeDetectionOnPushChildComponent,
     TemplateComponent,
     TemplateUrlComponent,
     StylesComponent,
@@ -96,6 +93,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
     FormsModule,
     Ch04Module,
     ViewProvidersModule,
+    ChangeDetectionModule,
     QueriesModule,
     AnimationsModule
   ],
