@@ -17,6 +17,7 @@ import { UnderlineDirective } from './underline.directive';
 import { CalcService } from './calc.service';
 
 import { AppComponent } from './app.component';
+import { AppSectionComponent } from './app.component';
 import { ExpressionsComponent } from './expressions/expressions.component';
 import { ClickComponent } from './click/click.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
@@ -45,6 +46,7 @@ import { HostComponent } from './host/host.component';
 @NgModule({
   declarations: [
     AppComponent,
+    AppSectionComponent,
     ExpressionsComponent,
     ClickComponent,
     PropertyBindingComponent,

@@ -8,14 +8,14 @@ h1.section {
   border-bottom-style: solid;
 }
 h2.section {
-  font-size: xx-large;
+  font-size: x-large;
   margin-left: -5px;
   border-bottom: 5px;
   border-color: crimson;
   border-bottom-style: solid;
 }
 h3.section {
-  font-size: x-large;
+  font-size: large;
   margin-left: -5px;
   border-bottom: 4px;
   border-color: crimson;
@@ -28,6 +28,7 @@ h4.section {
   border-color: crimson;
   border-bottom-style: dashed;
 }
+
 h1.section ~ div {
   margin-left: 10px;
 }
@@ -37,4 +38,12 @@ h2.section ~ div {
 h3.section ~ div {
   margin-left: 6px;
 }
+.close ~ * {
+  display: none;
+}
 
+.section:hover {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
