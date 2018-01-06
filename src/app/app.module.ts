@@ -44,6 +44,7 @@ import { ContentChildComponent } from './view-providers/content-child.component'
 import { ViewProvidersComponent } from './view-providers/view-providers.component';
 import { ChangeDetectionOnPushComponent } from './change-detection/change-detection-on-push.component';
 import { ChangeDetectionOnPushChildComponent } from './change-detection/change-detection-on-push-child.component';
+import { QueriesModule } from './queries/queries.module';
 
 @NgModule({
   declarations: [
@@ -89,7 +90,8 @@ import { ChangeDetectionOnPushChildComponent } from './change-detection/change-d
   imports: [
     BrowserModule,
     FormsModule,
-    Ch04Module
+    Ch04Module,
+    QueriesModule
   ],
   providers: [
     CalcService
