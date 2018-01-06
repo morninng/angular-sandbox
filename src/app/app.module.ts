@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Ch04Module } from './ch04/ch04.module';
+import { ViewProvidersModule } from './view-providers/view-providers.module';
+import { QueriesModule } from './queries/queries.module';
 
 import { UnderlineDirective } from './underline.directive';
 
@@ -38,13 +40,8 @@ import { ResizeComponent } from './host/resize.component';
 import { ExportAsComponent } from './export-as/export-as.component';
 import { CounterComponent } from './export-as/counter.component';
 import { ProvidersComponent } from './providers/providers.component';
-import { ViewProvidersContainerComponent } from './view-providers/view-providers-container.component';
-import { ViewChildComponent } from './view-providers/view-child.component';
-import { ContentChildComponent } from './view-providers/content-child.component';
-import { ViewProvidersComponent } from './view-providers/view-providers.component';
 import { ChangeDetectionOnPushComponent } from './change-detection/change-detection-on-push.component';
 import { ChangeDetectionOnPushChildComponent } from './change-detection/change-detection-on-push-child.component';
-import { QueriesModule } from './queries/queries.module';
 
 @NgModule({
   declarations: [
@@ -80,10 +77,6 @@ import { QueriesModule } from './queries/queries.module';
     ExportAsComponent,
     CounterComponent,
     ProvidersComponent,
-    ViewProvidersContainerComponent,
-    ViewChildComponent,
-    ContentChildComponent,
-    ViewProvidersComponent,
     ChangeDetectionOnPushComponent,
     ChangeDetectionOnPushChildComponent
   ],
@@ -91,6 +84,7 @@ import { QueriesModule } from './queries/queries.module';
     BrowserModule,
     FormsModule,
     Ch04Module,
+    ViewProvidersModule,
     QueriesModule
   ],
   providers: [
