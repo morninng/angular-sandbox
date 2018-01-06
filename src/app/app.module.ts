@@ -42,6 +42,10 @@ import { CounterComponent } from './export-as/counter.component';
 import { ProvidersComponent } from './providers/providers.component';
 import { ChangeDetectionOnPushComponent } from './change-detection/change-detection-on-push.component';
 import { ChangeDetectionOnPushChildComponent } from './change-detection/change-detection-on-push-child.component';
+import { TemplateComponent } from './template/template.component';
+import { TemplateUrlComponent } from './template/template-url.component';
+import { StylesComponent } from './styles/styles.component';
+import { StyleUrlsComponent } from './styles/style-urls.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +82,11 @@ import { ChangeDetectionOnPushChildComponent } from './change-detection/change-d
     CounterComponent,
     ProvidersComponent,
     ChangeDetectionOnPushComponent,
-    ChangeDetectionOnPushChildComponent
+    ChangeDetectionOnPushChildComponent,
+    TemplateComponent,
+    TemplateUrlComponent,
+    StylesComponent,
+    StyleUrlsComponent
   ],
   imports: [
     BrowserModule,
