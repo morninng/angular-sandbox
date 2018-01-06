@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Ch04Module } from './ch04/ch04.module';
 import { ViewProvidersModule } from './view-providers/view-providers.module';
 import { QueriesModule } from './queries/queries.module';
+import { AnimationsModule } from './animations/animations.module';
 
 import { UnderlineDirective } from './underline.directive';
 
@@ -93,7 +94,8 @@ import { StyleUrlsComponent } from './styles/style-urls.component';
     FormsModule,
     Ch04Module,
     ViewProvidersModule,
-    QueriesModule
+    QueriesModule,
+    AnimationsModule
   ],
   providers: [
     CalcService
