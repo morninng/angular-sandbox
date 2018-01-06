@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Ch04Module } from './ch04/ch04.module';
 import { ViewProvidersModule } from './view-providers/view-providers.module';
 import { QueriesModule } from './queries/queries.module';
+import { AnimationsModule } from './animations/animations.module';
 
 import { UnderlineDirective } from './underline.directive';
 
@@ -46,6 +47,7 @@ import { TemplateComponent } from './template/template.component';
 import { TemplateUrlComponent } from './template/template-url.component';
 import { StylesComponent } from './styles/styles.component';
 import { StyleUrlsComponent } from './styles/style-urls.component';
+import { InterpolationComponent } from './interpolation/interpolation.component';
 
 @NgModule({
   declarations: [
@@ -86,14 +88,16 @@ import { StyleUrlsComponent } from './styles/style-urls.component';
     TemplateComponent,
     TemplateUrlComponent,
     StylesComponent,
-    StyleUrlsComponent
+    StyleUrlsComponent,
+    InterpolationComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     Ch04Module,
     ViewProvidersModule,
-    QueriesModule
+    QueriesModule,
+    AnimationsModule
   ],
   providers: [
     CalcService
