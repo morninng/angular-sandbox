@@ -44,6 +44,7 @@ import { ChangeDetectionOnPushComponent } from './change-detection/change-detect
 import { ChangeDetectionOnPushChildComponent } from './change-detection/change-detection-on-push-child.component';
 import { TemplateComponent } from './template/template.component';
 import { TemplateUrlComponent } from './template/template-url.component';
+import { StylesComponent } from './styles/styles.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +83,8 @@ import { TemplateUrlComponent } from './template/template-url.component';
     ChangeDetectionOnPushComponent,
     ChangeDetectionOnPushChildComponent,
     TemplateComponent,
-    TemplateUrlComponent
+    TemplateUrlComponent,
+    StylesComponent
   ],
   imports: [
     BrowserModule,
