@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Ch04Module } from './ch04/ch04.module';
+import { SelectorModule } from './selector/selector.module';
 import { ViewProvidersModule } from './view-providers/view-providers.module';
 import { ChangeDetectionModule } from './change-detection/change-detection.module';
 import { QueriesModule } from './queries/queries.module';
@@ -29,8 +30,6 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { PipesComponent } from './pipes/pipes.component';
-import { SelectorMyAppComponent } from './selector/selector-my-app.component';
-import { SelectorComponent } from './selector/selector.component';
 import { InputsCounterComponent } from './inputs/inputs-counter.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { CounterColorDirective } from './inputs/counter-color.directive';
@@ -69,8 +68,6 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
     NgIfComponent,
     NgSwitchComponent,
     PipesComponent,
-    SelectorMyAppComponent,
-    SelectorComponent,
     InputsCounterComponent,
     InputsComponent,
     CounterColorDirective,
@@ -92,6 +89,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
     BrowserModule,
     FormsModule,
     Ch04Module,
+    SelectorModule,
     ViewProvidersModule,
     ChangeDetectionModule,
     QueriesModule,
