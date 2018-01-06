@@ -8,3 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 }
+
+@Component({
+  selector: '.section',
+  template: '<ng-content></ng-content>',
+  host: {
+    '(click)': 'click()',
+    '[class.close]': 'isClose'
+  }
+})
+export class AppSectionComponent {
+  isClose: boolean = false;
+  click() {
+    this.isClose = !this.isClose;
+  }
+}
