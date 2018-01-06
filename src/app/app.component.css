@@ -1,0 +1,40 @@
+.section {
+  font-family: sans-serif;
+}
+h1.section {
+  font-size: xx-large;
+  border-bottom: 6px;
+  border-color: crimson;
+  border-bottom-style: solid;
+}
+h2.section {
+  font-size: xx-large;
+  margin-left: -5px;
+  border-bottom: 5px;
+  border-color: crimson;
+  border-bottom-style: solid;
+}
+h3.section {
+  font-size: x-large;
+  margin-left: -5px;
+  border-bottom: 4px;
+  border-color: crimson;
+  border-bottom-style: dotted;
+}
+h4.section {
+  font-size: large;
+  margin-left: -5px;
+  border-bottom: 1px;
+  border-color: crimson;
+  border-bottom-style: dashed;
+}
+h1.section ~ div {
+  margin-left: 10px;
+}
+h2.section ~ div {
+  margin-left: 8px;
+}
+h3.section ~ div {
+  margin-left: 6px;
+}
+
