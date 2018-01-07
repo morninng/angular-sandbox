@@ -17,34 +17,36 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     }
   `],
   animations: [
-    trigger(':increment', [
-      style({
-        opacity: 0,
-      }),
-      animate(100, style({
-        opacity: 1,
-        transform: 'translateY(-30%)'
-      }))
-    ]),
-    transition(':decrement', [
-      style({
-        opacity: 0,
-      }),
-      animate(100, style({
-        opacity: 1,
-        transform: 'translateY(30%)'
-      }))
+    trigger('myTrigger', [
+      transition(':increment', [
+        style({
+          opacity: 0,
+        }),
+        animate(100, style({
+          opacity: 1,
+          transform: 'translateY(-30%)'
+        })),
+      ]),
+      transition(':decrement', [
+        style({
+          opacity: 0,
+        }),
+        animate(100, style({
+          opacity: 1,
+          transform: 'translateY(30%)'
+        }))
+      ])
     ])
   ]
 })
 export class Transition3Component implements OnInit {
   title: string;
-  count: 0;
+  count: number = 0;
 
   constructor() { }
 
   ngOnInit() {
-    this.title = 'transition';
+    this.title = 'transition3';
   }
 
   increment() {
