@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
       [count]="count"
       (changeCount)="change($event)">
     </app-counter>
+    <app-counter-with-setter
+      [count]="count"
+      (changeCount)="change($event)">
+    </app-counter-with-setter>
     <button (click)="reset()">Reset</button>
   `
 })
