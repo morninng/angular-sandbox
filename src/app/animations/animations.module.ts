@@ -7,6 +7,7 @@ import { StateComponent } from './state.component';
 import { State2Component } from './state2.component';
 import { TransitionComponent } from './transition.component';
 import { Transition2Component } from './transition2.component';
+import { Transition3Component } from './transition3.component';
 
 @NgModule({
   imports: [
@@ -18,14 +19,16 @@ import { Transition2Component } from './transition2.component';
     StateComponent,
     State2Component,
     TransitionComponent,
-    Transition2Component
+    Transition2Component,
+    Transition3Component
   ],
   exports: [
     AnimationsComponent,
     StateComponent,
     State2Component,
     TransitionComponent,
-    Transition2Component
+    Transition2Component,
+    Transition3Component
   ]
 })
 export class AnimationsModule { }
