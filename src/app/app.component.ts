@@ -11,9 +11,15 @@ export class AppComponent {
 
 @Component({
   selector: '.section',
-  template: '<ng-content></ng-content>',
+  template: '<span (click)="click()"><ng-content></ng-content></span>',
+  styles: [`
+    span:hover {
+      text-decoration: underline;
+      color: blue;
+      cursor: pointer;
+    }
+  `],
   host: {
-    '(click)': 'click()',
     '[class.close]': 'isClose'
   }
 })
