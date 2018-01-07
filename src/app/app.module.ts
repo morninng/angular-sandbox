@@ -39,6 +39,7 @@ import { StylesComponent } from './styles/styles.component';
 import { StyleUrlsComponent } from './styles/style-urls.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { HostComponent } from './host/host.component';
+import { InputOutputModule } from './input-output/input-output.module';
 import { HostDecoratorModule } from './host-decorator/host-decorator.module';
 
 @NgModule({
@@ -56,6 +57,7 @@ import { HostDecoratorModule } from './host-decorator/host-decorator.module';
     ChangeDetectionModule,
     QueriesModule,
     AnimationsModule,
+    InputOutputModule,
     HostDecoratorModule
   ],
   declarations: [
