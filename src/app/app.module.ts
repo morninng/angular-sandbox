@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
 import { Ch04Module } from './ch04/ch04.module';
 import { SelectorModule } from './selector/selector.module';
 import { InputsModule } from './inputs/inputs.module';
@@ -42,6 +43,7 @@ import { StylesComponent } from './styles/styles.component';
 import { StyleUrlsComponent } from './styles/style-urls.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { HostComponent } from './host/host.component';
+import { InputOutputModule } from './input-output/input-output.module';
 
 @NgModule({
   declarations: [
@@ -84,7 +86,8 @@ import { HostComponent } from './host/host.component';
     ViewProvidersModule,
     ChangeDetectionModule,
     QueriesModule,
-    AnimationsModule
+    AnimationsModule,
+    InputOutputModule
   ],
   providers: [
     CalcService
