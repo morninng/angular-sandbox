@@ -2,8 +2,8 @@
 
 ## Web Application
 
-+ [Production](https://angular-sandbox.herokuapp.com/)
-+ [Staging](https://staging-angular-sandbox.herokuapp.com)
++ [Production](https://angular-sandbox.herokuapp.com/) [![Build Status](https://travis-ci.org/cloudliner/angular-sandbox.svg?branch=master)](https://travis-ci.org/cloudliner/angular-sandbox)
++ [Staging](https://staging-angular-sandbox.herokuapp.com) [![Build Status](https://travis-ci.org/cloudliner/angular-sandbox.svg?branch=staging)](https://travis-ci.org/cloudliner/angular-sandbox)
 
 ## Build
 
@@ -32,7 +32,6 @@ open http://localhost:4200/
 ```sh
 ng test
 ```
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 #### Running end-to-end tests
 
