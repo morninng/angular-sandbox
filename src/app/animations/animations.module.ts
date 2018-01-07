@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { AnimationsComponent } from './animations.component';
 import { TransitionComponent } from './transition.component';
 import { StateComponent } from './state.component';
+import { State2Component } from './state2.component';
 
 @NgModule({
   imports: [
@@ -14,12 +15,14 @@ import { StateComponent } from './state.component';
   declarations: [
     AnimationsComponent,
     TransitionComponent,
-    StateComponent
+    StateComponent,
+    State2Component
   ],
   exports: [
     AnimationsComponent,
     TransitionComponent,
-    StateComponent
+    StateComponent,
+    State2Component
   ]
 })
 export class AnimationsModule { }
