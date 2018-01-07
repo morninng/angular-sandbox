@@ -2,12 +2,12 @@
 
 ## Web Application
 
-+ [Production](https://angular-sandbox.herokuapp.com/) [![Build Status](https://travis-ci.org/cloudliner/angular-sandbox.svg?branch=master)](https://travis-ci.org/cloudliner/angular-sandbox)
-+ [Staging](https://staging-angular-sandbox.herokuapp.com) [![Build Status](https://travis-ci.org/cloudliner/angular-sandbox.svg?branch=staging)](https://travis-ci.org/cloudliner/angular-sandbox)
+[Production](https://angular-sandbox.herokuapp.com/) [![Build Status](https://travis-ci.org/cloudliner/angular-sandbox.svg?branch=master)](https://travis-ci.org/cloudliner/angular-sandbox)
+[Staging](https://staging-angular-sandbox.herokuapp.com) [![Build Status](https://travis-ci.org/cloudliner/angular-sandbox.svg?branch=staging)](https://travis-ci.org/cloudliner/angular-sandbox)
 
 ## Build
 
-+ [Travis CI](https://travis-ci.org/cloudliner/angular-sandbox)
+[Travis CI](https://travis-ci.org/cloudliner/angular-sandbox)
 
 ## Instructions
 
