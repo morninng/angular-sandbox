@@ -39,6 +39,7 @@ import { StylesComponent } from './styles/styles.component';
 import { StyleUrlsComponent } from './styles/style-urls.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { HostComponent } from './host/host.component';
+import { InputOutputModule } from './input-output/input-output.module';
 
 @NgModule({
   imports: [
@@ -54,7 +55,8 @@ import { HostComponent } from './host/host.component';
     ViewProvidersModule,
     ChangeDetectionModule,
     QueriesModule,
-    AnimationsModule
+    AnimationsModule,
+    InputOutputModule
   ],
   declarations: [
     AppComponent,
