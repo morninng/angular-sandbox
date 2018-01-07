@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { BrowserModule } from '@angular/platform-browser'
+
 import { AnimationsComponent } from './animations.component';
+import { TransitionComponent } from './transition.component';
 
 @NgModule({
   imports: [
@@ -10,9 +12,11 @@ import { AnimationsComponent } from './animations.component';
   ],
   declarations: [
     AnimationsComponent,
+    TransitionComponent
   ],
   exports: [
-    AnimationsComponent
+    AnimationsComponent,
+    TransitionComponent
   ]
 })
 export class AnimationsModule { }
