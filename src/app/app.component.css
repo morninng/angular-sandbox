@@ -4,8 +4,6 @@
 h1.section {
   font-size: xx-large;
   border-bottom: 6px;
-  border-color: crimson;
-  border-bottom-style: solid;
 }
 h2.section {
   font-size: x-large;
@@ -40,10 +38,4 @@ h3.section ~ div {
 }
 .close ~ * {
   display: none;
-}
-
-.section:hover {
-  text-decoration: underline;
-  color: blue;
-  cursor: pointer;
 }
