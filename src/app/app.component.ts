@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -18,13 +18,10 @@ export class AppComponent {
       color: blue;
       cursor: pointer;
     }
-  `],
-  host: {
-    '[class.close]': 'isClose'
-  }
+  `]
 })
 export class AppSectionComponent {
-  isClose: boolean = false;
+  @HostBinding('class.close') isClose: boolean = false;
   click() {
     this.isClose = !this.isClose;
   }
