@@ -10,6 +10,7 @@ import { Transition2Component } from './transition2.component';
 import { Transition3Component } from './transition3.component';
 import { StyleComponent } from './style.component';
 import { Style2Component } from './style2.component';
+import { AnimateComponent } from './animate.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { Style2Component } from './style2.component';
     Transition2Component,
     Transition3Component,
     StyleComponent,
-    Style2Component
+    Style2Component,
+    AnimateComponent
   ],
   exports: [
     AnimationsComponent,
@@ -34,7 +36,8 @@ import { Style2Component } from './style2.component';
     Transition2Component,
     Transition3Component,
     StyleComponent,
-    Style2Component
+    Style2Component,
+    AnimateComponent
   ]
 })
 export class AnimationsModule { }
