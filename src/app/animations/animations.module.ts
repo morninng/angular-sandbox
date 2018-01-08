@@ -17,6 +17,7 @@ import { GroupComponent } from './group.component';
 import { SequenceComponent } from './sequence.component';
 import { QueryComponent } from './query.component';
 import { StaggerComponent } from './stagger.component';
+import { AnimateChildComponent } from './animate-child.component';
 
 @NgModule({
   imports: [
@@ -38,7 +39,8 @@ import { StaggerComponent } from './stagger.component';
     GroupComponent,
     SequenceComponent,
     QueryComponent,
-    StaggerComponent
+    StaggerComponent,
+    AnimateChildComponent
   ],
   exports: [
     AnimationsComponent,
@@ -55,7 +57,8 @@ import { StaggerComponent } from './stagger.component';
     GroupComponent,
     SequenceComponent,
     QueryComponent,
-    StaggerComponent
+    StaggerComponent,
+    AnimateChildComponent
   ]
 })
 export class AnimationsModule { }
