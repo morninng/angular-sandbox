@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+import { ParentChildModule } from './parent-child/parent-child.module';
 import { NgDirectivesModule } from './ng-directives/ng-directives.module';
 import { Ch04Module } from './ch04/ch04.module';
 import { SelectorModule } from './selector/selector.module';
@@ -29,8 +30,6 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 import { SimpleComponent } from './simple/simple.component';
 import { SumComponent } from './sum/sum.component';
-import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './child/child.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { ProvidersComponent } from './providers/providers.component';
 import { TemplateComponent } from './template/template.component';
@@ -46,6 +45,7 @@ import { HostDecoratorModule } from './host-decorator/host-decorator.module';
   imports: [
     BrowserModule,
     FormsModule,
+    ParentChildModule,
     NgDirectivesModule,
     Ch04Module,
     SelectorModule,
@@ -73,8 +73,6 @@ import { HostDecoratorModule } from './host-decorator/host-decorator.module';
     SimpleComponent,
     UnderlineDirective,
     SumComponent,
-    ParentComponent,
-    ChildComponent,
     PipesComponent,
     ProvidersComponent,
     TemplateComponent,
