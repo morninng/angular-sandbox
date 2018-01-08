@@ -9,6 +9,7 @@ import { TransitionComponent } from './transition.component';
 import { Transition2Component } from './transition2.component';
 import { Transition3Component } from './transition3.component';
 import { StyleComponent } from './style.component';
+import { Style2Component } from './style2.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { StyleComponent } from './style.component';
     TransitionComponent,
     Transition2Component,
     Transition3Component,
-    StyleComponent
+    StyleComponent,
+    Style2Component
   ],
   exports: [
     AnimationsComponent,
@@ -31,7 +33,8 @@ import { StyleComponent } from './style.component';
     TransitionComponent,
     Transition2Component,
     Transition3Component,
-    StyleComponent
+    StyleComponent,
+    Style2Component
   ]
 })
 export class AnimationsModule { }
