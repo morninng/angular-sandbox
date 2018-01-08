@@ -15,6 +15,7 @@ import { Animate2Component } from './animate2.component';
 import { KeyframesComponent } from './keyframes.component';
 import { GroupComponent } from './group.component';
 import { SequenceComponent } from './sequence.component';
+import { QueryComponent } from './query.component';
 
 @NgModule({
   imports: [
@@ -34,7 +35,8 @@ import { SequenceComponent } from './sequence.component';
     Animate2Component,
     KeyframesComponent,
     GroupComponent,
-    SequenceComponent
+    SequenceComponent,
+    QueryComponent
   ],
   exports: [
     AnimationsComponent,
@@ -49,7 +51,8 @@ import { SequenceComponent } from './sequence.component';
     Animate2Component,
     KeyframesComponent,
     GroupComponent,
-    SequenceComponent
+    SequenceComponent,
+    QueryComponent
   ]
 })
 export class AnimationsModule { }
