@@ -12,6 +12,13 @@ import { StyleComponent } from './style.component';
 import { Style2Component } from './style2.component';
 import { AnimateComponent } from './animate.component';
 import { Animate2Component } from './animate2.component';
+import { KeyframesComponent } from './keyframes.component';
+import { GroupComponent } from './group.component';
+import { SequenceComponent } from './sequence.component';
+import { QueryComponent } from './query.component';
+import { StaggerComponent } from './stagger.component';
+import { AnimateChildComponent } from './animate-child.component';
+import { UseAnimationComponent } from './use-animation.component';
 
 @NgModule({
   imports: [
@@ -28,7 +35,14 @@ import { Animate2Component } from './animate2.component';
     StyleComponent,
     Style2Component,
     AnimateComponent,
-    Animate2Component
+    Animate2Component,
+    KeyframesComponent,
+    GroupComponent,
+    SequenceComponent,
+    QueryComponent,
+    StaggerComponent,
+    AnimateChildComponent,
+    UseAnimationComponent
   ],
   exports: [
     AnimationsComponent,
@@ -40,7 +54,14 @@ import { Animate2Component } from './animate2.component';
     StyleComponent,
     Style2Component,
     AnimateComponent,
-    Animate2Component
+    Animate2Component,
+    KeyframesComponent,
+    GroupComponent,
+    SequenceComponent,
+    QueryComponent,
+    StaggerComponent,
+    AnimateChildComponent,
+    UseAnimationComponent
   ]
 })
 export class AnimationsModule { }
