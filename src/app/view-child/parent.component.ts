@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { ChildComponent } from './child.component';
 
 @Component({
   selector: 'app-parent',
@@ -9,4 +10,10 @@ import { Component } from '@angular/core';
     </div>
   `
 })
-export class ParentComponent { }
+export class ParentComponent implements AfterViewInit {
+  @ViewChild(ChildComponent) child: ChildComponent;
+
+  ngAfterViewInit() {
+    console.log(this.child);
+  }
+}
