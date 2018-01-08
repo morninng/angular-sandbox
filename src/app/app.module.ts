@@ -40,6 +40,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { HostComponent } from './host/host.component';
 import { InputOutputModule } from './input-output/input-output.module';
 import { HostDecoratorModule } from './host-decorator/host-decorator.module';
+import { ViewChildModule } from './view-child/view-child.module';
 
 @NgModule({
   imports: [
@@ -58,7 +59,8 @@ import { HostDecoratorModule } from './host-decorator/host-decorator.module';
     QueriesModule,
     AnimationsModule,
     InputOutputModule,
-    HostDecoratorModule
+    HostDecoratorModule,
+    ViewChildModule
   ],
   declarations: [
     AppComponent,
