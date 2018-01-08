@@ -9,10 +9,12 @@ import { trigger, transition, query, style, animate } from '@angular/animations'
       <div class="elem" [@myTrigger]="animState">
         <h3 class="title">Title</h3>
         <div class="contents">
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div class="contents">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. 
         </div>
       </div>
       <button (click)="click()">Animate</button>
@@ -34,7 +36,7 @@ import { trigger, transition, query, style, animate } from '@angular/animations'
       transition('off => on', [
         query('.contents', style({
           opacity: 0
-        })),
+        }), { limit: 1 }),
         query(':self', [
           style({
             height: 0
