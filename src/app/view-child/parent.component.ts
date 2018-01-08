@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, QueryList, ViewChild, ViewChildren, AfterViewInit } from '@angular/core';
 import { ChildComponent } from './child.component';
 
 @Component({
@@ -13,7 +13,10 @@ import { ChildComponent } from './child.component';
 export class ParentComponent implements AfterViewInit {
   @ViewChild(ChildComponent) child: ChildComponent;
 
+  @ViewChildren(ChildComponent) children: QueryList<ChildComponent>;
+
   ngAfterViewInit() {
-    console.log(this.child);
+    console.log('ViewChild:', this.child);
+    console.log('ViewChildren', this.children);
   }
 }
