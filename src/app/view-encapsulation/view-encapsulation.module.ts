@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 
 import { ViewEncapsulationComponent } from './view-encapsulation.component';
+import { ViewEncapsulationEmulatedComponent } from './view-encapsulation-emulated.component';
 
 @NgModule({
   declarations: [
-    ViewEncapsulationComponent
+    ViewEncapsulationComponent,
+    ViewEncapsulationEmulatedComponent
   ],
   exports: [
-    ViewEncapsulationComponent
+    ViewEncapsulationComponent,
+    ViewEncapsulationEmulatedComponent
   ]
 })
 export class ViewEncapsulationModule { }
