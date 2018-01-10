@@ -14,7 +14,7 @@ cache:
   apt: true
   bundler: true
   directories:
-    - node_modules
+  - node_modules
 before_install:
 - export CHROME_BIN=chromium-browser
 - export DISPLAY=:99.0
@@ -27,10 +27,13 @@ before_script:
 script:
 - karma start ./karma.conf.js --single-run
 deploy:
-  provider: heroku
+- provider: heroku
   api_key:
     secure: Oiuri4ttOo3oHAqF0esOM4Bbu2q9wLv3Ki2kUm9zhqm50ZEXz9LSBdIrtnrl18oRw+PRr+4oHVxTXUIcjDEgI9I200nKOtlAQf1QYG6ZwA3uzYXu0fqFM/HPTyp2XO/IaEuhBHMjWtuPYN1I3HTk5LTZRc78LaU20q9PucMSOFtHjHHQrWHihhwlPvh2zcHFuX7JgThBcanHiqs3baitkjoYRqEkBfnx4wZO1ezmwoGvODMdlBm4BXVQn6uZMCekwqACKGY8OK9/4fISif1LpoQJ1CupjcSm5KSnLHk0lUP2MyFqxuOEgCfre39GhNs/9ZvgNrrZODbRNHAq/Nv17S6Rpv61333YGkLiy4xWZrsjszLeDckYPhWPooLiOhifZTOfFtuIi11POJvU3YUiQSMS67fgyDJTfW0gXrih5A7vzzIcp57xzQa5u7CKoUGsT2u49wwKIJoz6DWOjCLD9we1xLDL5qWAEYTrF7vr+QzQ3RC0w3i90EE9ukqsjL2pTvrruNAKWiJU4NT00p42vQWuUvRGB7X9kuot/S5Vraa292TE3+PgphqFINY0j0klaDVaHeRFygND6ZNs6WDLWLQcIQwcGoZy8oD0tDlKWBYPGV0ScQD77inVTm5RAJaqZ3GbOe/Q9n/spVmcERakGdz+TNr+8jixImfLTjjdfRg=
-  app: 
+  app:
     master: angular-sandbox
     staging: staging-angular-sandbox
   skip_cleanup: true
+- provider: firebase
+  token:
+    secure: om/uClx2PY8UnmvpcUeH8qY+CrUfn3ZLukNqHKjW4zV+W63OQ/qAWTQR/9InNNzyIo5FgMLhSj58sMlZMaytrOT/tEK7mD1UiTTAuFBs7BG5VAeQ8a9trMFDyAJqZm3KuY5j1CCZZekkiyOy+8tvcrsV2sTcSTInvl0nZCaquVYXI+CYVG0ZF5x/nvng4C7GzIA+yA3/5NeUC1QKWb8jlp2TvAYnLdISpkbj2smMn0i+Glsa7nW5nGA5FMw5QkeOSTOWvl9q8RIURjqyEPiwyETfFQ6n9WNitsbwvaETGKFgdKjyTFP1BXLhwih3Z4xx5+XC+Q84cXDb4zqtJqduWzqiuTeyZva/DvbVIDDb4aD9S/E+ZpGT0fXl7BmcIHH3SickXDMfOsx/zs42TntMd5+U6CV2YFtyt/EqkSqwFP03fsn0bYzJ+q+izmsQ0CY552yV2TQ3Up7d2ex+oPqX8m9ei1EBPD7hWdtNbG1OBmByEtD59A153N6K7ZO+P1+D39SZeZRfjnnVvcBlSf+kiyYv40DmIUKrZdp1+gvDpiC+ns3nhFF2o6+YtE92fMWnbW9yqnzjcxzaZpovBOoGNkUp4eCjyyJyxzDDj6DR4xO82/6KYf2sTyCl9RjZlPlyk0BFpylZv0VLna8RTzZuhv4hu4EKwa7DJNSM2Er7PPg=
