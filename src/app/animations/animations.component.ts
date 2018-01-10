@@ -18,7 +18,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ]
 })
 export class AnimationsComponent {
-  animate: string = 'on';
+  animate = 'on';
 
   click() {
     if (this.animate === 'on') {

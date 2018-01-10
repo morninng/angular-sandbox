@@ -21,7 +21,7 @@ export class AppComponent {
   `]
 })
 export class AppSectionComponent {
-  @HostBinding('class.close') isClose: boolean = false;
+  @HostBinding('class.close') isClose = false;
   click() {
     this.isClose = !this.isClose;
   }

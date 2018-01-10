@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class InterpolationComponent {
   message: string;
   constructor() {
-    this.message = 'Change delimiters.'
+    this.message = 'Change delimiters.';
   }
 }

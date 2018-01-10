@@ -17,7 +17,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     }
   `],
   animations: [
-    trigger('myTrigger',[
+    trigger('myTrigger', [
       state('from', style({
         height: '0px'
       })),

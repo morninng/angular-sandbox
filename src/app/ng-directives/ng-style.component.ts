@@ -10,5 +10,5 @@ export class NgStyleComponent {
   style1 = {
     'font-weight': 'bold',
     'text-decoration': 'line-through'
-  }
+  };
 }

@@ -9,7 +9,7 @@ import { SelectorModule } from './selector/selector.module';
 import { InputsModule } from './inputs/inputs.module';
 import { OutputsModule } from './outputs/outputs.module';
 import { HostModule } from './host/host.module';
-import { ExportAsModule } from './export-as/export-as.module'
+import { ExportAsModule } from './export-as/export-as.module';
 import { ViewProvidersModule } from './view-providers/view-providers.module';
 import { ChangeDetectionModule } from './change-detection/change-detection.module';
 import { QueriesModule } from './queries/queries.module';

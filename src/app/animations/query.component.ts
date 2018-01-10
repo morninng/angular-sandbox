@@ -14,7 +14,7 @@ import { trigger, transition, query, style, animate } from '@angular/animations'
         </div>
         <div class="contents">
           Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat. 
+          laboris nisi ut aliquip ex ea commodo consequat.
         </div>
       </div>
       <button (click)="click()">Animate</button>
