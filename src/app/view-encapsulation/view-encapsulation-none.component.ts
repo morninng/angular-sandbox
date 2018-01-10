@@ -4,11 +4,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'app-view-encapsulation-none',
   template: `
     <h1>Hello Angular</h1>
-    <p>ViewEncapsulation.None</p>
+    <p class="view-encapsulation-none">ViewEncapsulation.None</p>
   `,
   styles: [
     'h1 { font-size: 20px; font-weight: bold; }',
-    'p { font-size: 16px; margin: 10px auto; }'
+    '.view-encapsulation-none { font-size: 16px; margin: 10px auto; font-style: italic; }'
   ],
   encapsulation: ViewEncapsulation.None
 })

@@ -4,11 +4,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'app-view-encapsulation-native',
   template: `
     <h1>Hello Angular</h1>
-    <p>ViewEncapsulation.Native</p>
+    <p class="view-encapsulation-native">ViewEncapsulation.Native</p>
   `,
   styles: [
     'h1 { font-size: 20px; font-weight: bold; }',
-    'p { font-size: 16px; margin: 10px auto; }'
+    '.view-encapsulation-native { font-size: 16px; margin: 10px auto; font-style: italic; }'
   ],
   encapsulation: ViewEncapsulation.Native
 })
