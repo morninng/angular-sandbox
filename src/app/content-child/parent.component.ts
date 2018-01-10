@@ -1,4 +1,4 @@
-import { Component , ContentChild, AfterContentInit } from '@angular/core';
+import { Component, QueryList, ContentChild, ContentChildren, AfterContentInit } from '@angular/core';
 import { ChildComponent } from './child.component';
 
 @Component({
@@ -8,7 +8,10 @@ import { ChildComponent } from './child.component';
 export class ParentComponent implements AfterContentInit {
   @ContentChild(ChildComponent) child: ChildComponent;
 
+  @ContentChildren(ChildComponent) children: QueryList<ChildComponent>;
+
   ngAfterContentInit() {
     console.log('ContentChild: ', this.child);
+    console.log('ContentChildren: ', this.children);
   }
 }
