@@ -42,6 +42,8 @@ import { InputOutputModule } from './input-output/input-output.module';
 import { HostDecoratorModule } from './host-decorator/host-decorator.module';
 import { ViewChildModule } from './view-child/view-child.module';
 import { ContentChildModule } from './content-child/content-child.module';
+import { ViewEncapsulationModule } from './view-encapsulation/view-encapsulation.module';
+import { HostSelectorModule } from './host-selector/host-selector.module';
 
 @NgModule({
   imports: [
@@ -62,7 +64,9 @@ import { ContentChildModule } from './content-child/content-child.module';
     InputOutputModule,
     HostDecoratorModule,
     ViewChildModule,
-    ContentChildModule
+    ContentChildModule,
+    ViewEncapsulationModule,
+    HostSelectorModule
   ],
   declarations: [
     AppComponent,

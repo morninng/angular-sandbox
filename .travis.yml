@@ -37,7 +37,3 @@ deploy:
   token:
     secure: om/uClx2PY8UnmvpcUeH8qY+CrUfn3ZLukNqHKjW4zV+W63OQ/qAWTQR/9InNNzyIo5FgMLhSj58sMlZMaytrOT/tEK7mD1UiTTAuFBs7BG5VAeQ8a9trMFDyAJqZm3KuY5j1CCZZekkiyOy+8tvcrsV2sTcSTInvl0nZCaquVYXI+CYVG0ZF5x/nvng4C7GzIA+yA3/5NeUC1QKWb8jlp2TvAYnLdISpkbj2smMn0i+Glsa7nW5nGA5FMw5QkeOSTOWvl9q8RIURjqyEPiwyETfFQ6n9WNitsbwvaETGKFgdKjyTFP1BXLhwih3Z4xx5+XC+Q84cXDb4zqtJqduWzqiuTeyZva/DvbVIDDb4aD9S/E+ZpGT0fXl7BmcIHH3SickXDMfOsx/zs42TntMd5+U6CV2YFtyt/EqkSqwFP03fsn0bYzJ+q+izmsQ0CY552yV2TQ3Up7d2ex+oPqX8m9ei1EBPD7hWdtNbG1OBmByEtD59A153N6K7ZO+P1+D39SZeZRfjnnVvcBlSf+kiyYv40DmIUKrZdp1+gvDpiC+ns3nhFF2o6+YtE92fMWnbW9yqnzjcxzaZpovBOoGNkUp4eCjyyJyxzDDj6DR4xO82/6KYf2sTyCl9RjZlPlyk0BFpylZv0VLna8RTzZuhv4hu4EKwa7DJNSM2Er7PPg=
   skip_cleanup: true
-  on:
-    branch:
-     - master
-     - staging
