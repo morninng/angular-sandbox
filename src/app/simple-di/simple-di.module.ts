@@ -11,7 +11,7 @@ import { SimpleDiService } from '../simple-di.service';
     SimpleDiComponent
   ],
   providers: [
-    SimpleDiService // 定義したサービスを追加
+    { provide: SimpleDiService, useClass: SimpleDiService }
   ]
 })
 export class SimpleDiModule { }
