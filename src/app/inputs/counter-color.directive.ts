@@ -2,7 +2,7 @@ import { Directive, OnInit, ElementRef } from '@angular/core';
 
 @Directive({
   selector: '[appCounterColor]',
-  inputs:[
+  inputs: [
     'appCounterColor'
   ]
 })

@@ -28,7 +28,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 })
 export class Transition2Component implements OnInit {
   title: string;
-  visible: boolean = false;
+  visible = false;
 
   constructor() { }
 
