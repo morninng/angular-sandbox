@@ -38,6 +38,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: cloudliner/angular-sandbox
+    all_branches: true
     condition: $TRAVIS_PULL_REQUEST = true
 - provider: heroku
   api_key:
