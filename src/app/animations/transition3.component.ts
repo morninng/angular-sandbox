@@ -41,7 +41,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 })
 export class Transition3Component implements OnInit {
   title: string;
-  count: number = 0;
+  count = 0;
 
   constructor() { }
 

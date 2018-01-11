@@ -59,3 +59,4 @@ export class SequenceComponent implements OnInit {
     this.animState = 'off';
   }
 }
+

@@ -10,12 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class Ch04Component implements OnInit {
   message: string;
   constructor() {
-     this.message = 'Hello from constructor.'
+     this.message = 'Hello from constructor.';
      console.log(this.message);
   }
   ngOnInit() {
 
-    this.message = 'Hello from ngOnInit.'
+    this.message = 'Hello from ngOnInit.';
     console.log(this.message);
   }
 }
