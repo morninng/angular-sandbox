@@ -14,6 +14,7 @@ import { ViewProvidersModule } from './view-providers/view-providers.module';
 import { ChangeDetectionModule } from './change-detection/change-detection.module';
 import { QueriesModule } from './queries/queries.module';
 import { AnimationsModule } from './animations/animations.module';
+import { SimpleDiModule } from './simple-di/simple-di.module';
 
 import { UnderlineDirective } from './underline.directive';
 
@@ -66,7 +67,8 @@ import { HostSelectorModule } from './host-selector/host-selector.module';
     ViewChildModule,
     ContentChildModule,
     ViewEncapsulationModule,
-    HostSelectorModule
+    HostSelectorModule,
+    SimpleDiModule
   ],
   declarations: [
     AppComponent,
