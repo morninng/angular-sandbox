@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 
 import { SimpleDiComponent } from './simple-di.component';
-import { SimpleDiService } from '../simple-di.service';
+import { SimpleDiService } from './simple-di.service';
+import { UseClassService } from './use-class.service';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,7 @@ import { SimpleDiService } from '../simple-di.service';
     SimpleDiComponent
   ],
   providers: [
-    { provide: SimpleDiService, useClass: SimpleDiService }
+    { provide: SimpleDiService, useClass: UseClassService }
   ]
 })
 export class SimpleDiModule { }

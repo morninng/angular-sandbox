@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SimpleDiService } from '../simple-di.service';
+import { SimpleDiService } from './simple-di.service';
 
 @Component({
   selector: 'app-simple-di',
@@ -7,7 +7,7 @@ import { SimpleDiService } from '../simple-di.service';
 })
 export class SimpleDiComponent implements OnInit {
   message: string;
-  // 引数 simpleDiService は、SimpleDiService のインスタンス
+
   constructor(private simpleDiService: SimpleDiService) { }
 
   ngOnInit() {
