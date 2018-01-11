@@ -2,7 +2,7 @@
 
 ## Web Application
 
-[Production@Firebase](https://angular-sandbox.cloudliner.net)
+[Production@Firebase](https://angular-sandbox.cloudliner.net) / 
 [Production@Heroku](https://angular-sandbox.herokuapp.com/)
 [![Build Status](https://travis-ci.org/cloudliner/angular-sandbox.svg?branch=master)](https://travis-ci.org/cloudliner/angular-sandbox)
 
