@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
 
-import { Angulartics2Module } from 'angulartics2';
-import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+import { AppRoutingModule } from './app-routing.module';
 
 import { ParentChildModule } from './parent-child/parent-child.module';
 import { NgDirectivesModule } from './ng-directives/ng-directives.module';
@@ -53,7 +51,7 @@ import { HostSelectorModule } from './host-selector/host-selector.module';
   imports: [
     BrowserModule,
     FormsModule,
-    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
+    AppRoutingModule,
     ParentChildModule,
     NgDirectivesModule,
     Ch04Module,

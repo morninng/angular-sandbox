@@ -12,7 +12,12 @@ export class AppComponent {
 
 @Component({
   selector: '.section',
-  template: '<span (click)="click()"><ng-content></ng-content></span>',
+  template: `
+    <span (click)="click()"
+      angulartics2On="click"
+      angularticsAction="SectionClick">
+      <ng-content></ng-content>
+    </span>`,
   styles: [`
     span:hover {
       text-decoration: underline;
