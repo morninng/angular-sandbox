@@ -8,19 +8,19 @@ import { UseExistingService } from './use-existing.service';
 import { DummyService } from './dummy.service';
 
 import { SimpleDiComponent } from './simple-di.component';
-import { UseValueComponent } from './use-value.component';
-import { UseExistingComponent } from './use-existing-di.component';
+import { UseValueDiComponent } from './use-value-di.component';
+import { UseExistingDiComponent } from './use-existing-di.component';
 
 @NgModule({
   declarations: [
     SimpleDiComponent,
-    UseValueComponent,
-    UseExistingComponent
+    UseValueDiComponent,
+    UseExistingDiComponent
   ],
   exports: [
     SimpleDiComponent,
-    UseValueComponent,
-    UseExistingComponent
+    UseValueDiComponent,
+    UseExistingDiComponent
   ],
   providers: [
     { provide: SimpleDiService, useClass: UseClassService },

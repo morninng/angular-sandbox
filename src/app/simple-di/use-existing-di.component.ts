@@ -8,7 +8,7 @@ import { DummyService } from './dummy.service';
     <p>{{count}}</p>
   `
 })
-export class UseExistingComponent implements OnInit {
+export class UseExistingDiComponent implements OnInit {
   count = 0;
 
   constructor(

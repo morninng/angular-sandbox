@@ -26,6 +26,13 @@ h4.section {
   border-color: crimson;
   border-bottom-style: dashed;
 }
+h5.section {
+  font-size: medium;
+  margin-left: -5px;
+  border-bottom: 1px;
+  border-color: crimson;
+  border-bottom-style: dashed;
+}
 
 h1.section ~ div {
   margin-left: 10px;
@@ -35,6 +42,9 @@ h2.section ~ div {
 }
 h3.section ~ div {
   margin-left: 6px;
+}
+h4.section ~ div {
+  margin-left: 4px;
 }
 .close ~ * {
   display: none;
