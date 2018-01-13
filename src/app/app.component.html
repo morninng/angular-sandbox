@@ -252,21 +252,11 @@
     <h2 class="section">7-1 ルーティング機能</h2>
     <div>
       <h3 class="section">7-1-5 RouterLink</h3>
-      <div>
-        <a [routerLink]="['/']"
-           angulartics2On="click"
-           angularticsAction="RouterClick">home</a>
-        <a [routerLink]="['/', 'detail']"
-           angulartics2On="click"
-           angularticsAction="RouterClick">detail</a>  
-      </div>
-      <div>
-        <router-outlet></router-outlet>
-      </div>
+      <app-router-link></app-router-link>
     </div>
     <div>
       <h3 class="section">7-1-6 RouterLinkへのバインド</h3>
-      <app-router></app-router>
+      <app-router-link-bind></app-router-link-bind>
     </div>
   </div>
 </div>

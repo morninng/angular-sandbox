@@ -1,0 +1,11 @@
+<div>
+  <a [routerLink]="['/']"
+      angulartics2On="click"
+      angularticsAction="RouterClick">home</a>
+  <a [routerLink]="['/', 'detail']"
+      angulartics2On="click"
+      angularticsAction="RouterClick">detail</a>  
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
