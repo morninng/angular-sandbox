@@ -3,7 +3,9 @@ import { SimpleDiService } from './simple-di.service';
 
 @Component({
   selector: 'app-simple-di',
-  templateUrl: './simple-di.component.html',
+  template: `
+    <p>{{message}}</p>
+  `
 })
 export class SimpleDiComponent implements OnInit {
   message: string;
