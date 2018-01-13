@@ -1,0 +1,9 @@
+<div *ngFor="let item of list">
+  <button
+    [routerLink]="['/', 'detail', item.id]">
+    {{item.name}}
+  </button>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
