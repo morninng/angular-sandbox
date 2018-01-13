@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+import { AppRoutingModule } from './app-routing.module';
+
 import { ParentChildModule } from './parent-child/parent-child.module';
 import { NgDirectivesModule } from './ng-directives/ng-directives.module';
 import { Ch04Module } from './ch04/ch04.module';
@@ -49,6 +51,7 @@ import { HostSelectorModule } from './host-selector/host-selector.module';
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
     ParentChildModule,
     NgDirectivesModule,
     Ch04Module,
