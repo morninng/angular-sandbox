@@ -48,7 +48,7 @@ import { ViewEncapsulationModule } from './view-encapsulation/view-encapsulation
 import { HostSelectorModule } from './host-selector/host-selector.module';
 import { HomeComponent } from './home/home.component';
 import { DetailComponent } from './detail/detail.component';
-import { RouterComponent } from './router/router.component';
+import { RouterLinkModule } from './router-link/router-link.module';
 
 @NgModule({
   imports: [
@@ -72,7 +72,8 @@ import { RouterComponent } from './router/router.component';
     ViewChildModule,
     ContentChildModule,
     ViewEncapsulationModule,
-    HostSelectorModule
+    HostSelectorModule,
+    RouterLinkModule
   ],
   declarations: [
     AppComponent,
@@ -95,8 +96,7 @@ import { RouterComponent } from './router/router.component';
     StyleUrlsComponent,
     InterpolationComponent,
     HomeComponent,
-    DetailComponent,
-    RouterComponent
+    DetailComponent
   ],
   providers: [
     CalcService
