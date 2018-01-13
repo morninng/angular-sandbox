@@ -250,6 +250,16 @@
   </div>
   <div>
     <h2 class="section">7-1 ルーティング機能</h2>
-    <router-outlet></router-outlet>
+    <div>
+      <a routerLink="/"
+         angulartics2On="click"
+         angularticsAction="RouterClick">home</a>
+      <a routerLink="/detail"
+         angulartics2On="click"
+         angularticsAction="RouterClick">detail</a>  
+    </div>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>
