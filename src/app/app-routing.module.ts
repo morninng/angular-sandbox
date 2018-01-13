@@ -34,9 +34,6 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes),
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics])
-  ],
-  exports: [
-    RouterModule
   ]
 })
 export class AppRoutingModule { }
