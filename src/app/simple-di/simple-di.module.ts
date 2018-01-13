@@ -9,7 +9,7 @@ import { DummyService } from './dummy.service';
 
 import { SimpleDiComponent } from './simple-di.component';
 import { UseValueComponent } from './use-value.component';
-import { UseExistingComponent } from './use-existing.component';
+import { UseExistingComponent } from './use-existing-di.component';
 
 @NgModule({
   declarations: [

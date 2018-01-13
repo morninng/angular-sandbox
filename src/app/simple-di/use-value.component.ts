@@ -13,6 +13,5 @@ import { UseValueConstToken } from './use-value-const-token';
 export class UseValueComponent {
   constructor(
     private useValueService: UseValueService,
-    private useValueConstToken: UseValueConstToken
-  ) {}
+    private useValueConstToken: UseValueConstToken) {}
 }
