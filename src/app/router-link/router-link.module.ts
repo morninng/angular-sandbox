@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { RouterLinkComponent } from './router-link.component';
 import { RouterLinkBindComponent } from './router-link-bind.component';
+import { RouterLinkActiveComponent } from './router-link-active.component';
 
 @NgModule({
   imports: [
@@ -12,11 +13,13 @@ import { RouterLinkBindComponent } from './router-link-bind.component';
   ],
   declarations: [
     RouterLinkComponent,
-    RouterLinkBindComponent
+    RouterLinkBindComponent,
+    RouterLinkActiveComponent
   ],
   exports: [
     RouterLinkComponent,
-    RouterLinkBindComponent
+    RouterLinkBindComponent,
+    RouterLinkActiveComponent
   ]
 })
 export class RouterLinkModule { }
