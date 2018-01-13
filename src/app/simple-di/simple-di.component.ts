@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { SimpleDiService } from './simple-di.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { SimpleDiService } from './simple-di.service';
 export class SimpleDiComponent implements OnInit {
   message: string;
 
-  constructor(private simpleDiService: SimpleDiService) { }
+  constructor(@Inject(SimpleDiService) private simpleDiService: SimpleDiService) { }
 
   ngOnInit() {
     this.message = this.simpleDiService.message;
