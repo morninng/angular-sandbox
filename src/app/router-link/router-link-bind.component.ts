@@ -8,7 +8,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class RouterLinkBindComponent {
   list = [
-    { id: '1', name: 'A' },
-    { id: '2', name: 'B' }
+    { id: '1', name: 'detail - 1' },
+    { id: '2', name: 'detail - 2' }
   ]
 }
