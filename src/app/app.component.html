@@ -251,10 +251,10 @@
   <div>
     <h2 class="section">7-1 ルーティング機能</h2>
     <div>
-      <a routerLink="/"
+      <a [routerLink]="['/']"
          angulartics2On="click"
          angularticsAction="RouterClick">home</a>
-      <a routerLink="/detail"
+      <a [routerLink]="['/', 'detail']"
          angulartics2On="click"
          angularticsAction="RouterClick">detail</a>  
     </div>
