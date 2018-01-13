@@ -5,6 +5,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+import { RouterTestingModule } from '@angular/router/testing';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -33,7 +35,8 @@ beforeEach(async(() => {
     ],
     imports: [
       BrowserModule,
-      FormsModule
+      FormsModule,
+      RouterTestingModule
     ],
     providers: [
     ],
