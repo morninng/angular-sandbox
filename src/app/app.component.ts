@@ -1,4 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,8 @@ export class AppComponent {
   `]
 })
 export class AppSectionComponent {
+  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {}
+
   @HostBinding('class.close') isClose = false;
   click() {
     this.isClose = !this.isClose;
