@@ -4,7 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    children: []
+  }
+];
 
 @NgModule({
   imports: [
