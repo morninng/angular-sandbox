@@ -16,6 +16,7 @@ import { ViewProvidersModule } from './view-providers/view-providers.module';
 import { ChangeDetectionModule } from './change-detection/change-detection.module';
 import { QueriesModule } from './queries/queries.module';
 import { AnimationsModule } from './animations/animations.module';
+import { SimpleDiModule } from './simple-di/simple-di.module';
 
 import { UnderlineDirective } from './underline.directive';
 
@@ -73,6 +74,7 @@ import { RouterLinkModule } from './router-link/router-link.module';
     ContentChildModule,
     ViewEncapsulationModule,
     HostSelectorModule,
+    SimpleDiModule,
     RouterLinkModule
   ],
   declarations: [
