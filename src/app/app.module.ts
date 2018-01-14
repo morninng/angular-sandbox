@@ -17,6 +17,8 @@ import { ChangeDetectionModule } from './change-detection/change-detection.modul
 import { QueriesModule } from './queries/queries.module';
 import { AnimationsModule } from './animations/animations.module';
 import { SimpleDiModule } from './simple-di/simple-di.module';
+import { RxjsModule } from './rxjs/rxjs.module';
+import { RouterLinkModule } from './router-link/router-link.module';
 
 import { UnderlineDirective } from './underline.directive';
 
@@ -49,7 +51,6 @@ import { ViewEncapsulationModule } from './view-encapsulation/view-encapsulation
 import { HostSelectorModule } from './host-selector/host-selector.module';
 import { HomeComponent } from './home/home.component';
 import { DetailComponent } from './detail/detail.component';
-import { RouterLinkModule } from './router-link/router-link.module';
 
 @NgModule({
   imports: [
@@ -75,6 +76,7 @@ import { RouterLinkModule } from './router-link/router-link.module';
     ViewEncapsulationModule,
     HostSelectorModule,
     SimpleDiModule,
+    RxjsModule,
     RouterLinkModule
   ],
   declarations: [
