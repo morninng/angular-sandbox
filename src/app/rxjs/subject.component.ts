@@ -4,9 +4,9 @@ import { Observable, Subject } from 'rxjs/Rx';
 @Component({
   selector: 'app-subject',
   template: `
-    <p><button (click)="click1()">Observableの作成/購読</button>{{message1}}</p>
-    <p><button (click)="click2()">Subjectの作成</button>{{message2}}</p>
-    <p><button (click)="click3()">Subject Observable</button>{{message3}}</p>
+    <p><button (click)="click1()">Observableの作成/購読</button> {{message1}}</p>
+    <p><button (click)="click2()">Subjectの作成</button> {{message2}}</p>
+    <p><button (click)="click3()">Subject Observable</button> {{message3}}</p>
   `
 })
 export class SubjectComponent {
