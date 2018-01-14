@@ -9,24 +9,28 @@ import { UseExistingService } from './use-existing.service';
 import { DummyService } from './dummy.service';
 import { UseFactoryService } from './use-factory.service';
 import { useFactoryFn } from './use-factory.function';
+import { OptionalInjectionService } from './optional-injection.service';
 
 import { SimpleDiComponent } from './simple-di.component';
 import { UseValueDiComponent } from './use-value-di.component';
 import { UseExistingDiComponent } from './use-existing-di.component';
 import { UseFactoryDiComponent } from './use-factory-di.component';
+import { OptionalDiComponent } from './optional-di.component';
 
 @NgModule({
   declarations: [
     SimpleDiComponent,
     UseValueDiComponent,
     UseExistingDiComponent,
-    UseFactoryDiComponent
+    UseFactoryDiComponent,
+    OptionalDiComponent
   ],
   exports: [
     SimpleDiComponent,
     UseValueDiComponent,
     UseExistingDiComponent,
-    UseFactoryDiComponent
+    UseFactoryDiComponent,
+    OptionalDiComponent
   ],
   providers: [
     { provide: SimpleDiService, useClass: UseClassService },
@@ -36,7 +40,8 @@ import { UseFactoryDiComponent } from './use-factory-di.component';
     { provide: DummyService, useExisting: UseExistingService },
     { provide: UseFactoryService, useFactory: useFactoryFn,
       deps: [SimpleDiService, DummyService]
-    }
+    },
+    OptionalInjectionService
   ]
 })
 export class SimpleDiModule { }
