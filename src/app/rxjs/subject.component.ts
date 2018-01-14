@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs/Rx';
+import { Observable, Subject } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-subject',
-  template: `<p>{{message}}</p>`
+  template: `
+    <p>{{message1}}</p>
+    <p>{{message2}}</p>
+  `
 })
 export class SubjectComponent implements OnInit {
-  message = '';
+  message1 = '';
+  message2 = '';
 
   constructor() { }
 
@@ -27,16 +31,27 @@ export class SubjectComponent implements OnInit {
       observable.subscribe({
         next: (str) => {
           console.log(str);
-          this.message += str;
+          this.message1 += str;
         },
         error: (err) => {
           console.log(err);
         },
         complete: () => {
           console.log('デベロッパーズガイド');
-          this.message += 'デベロッパーズガイド';
+          this.message1 += 'デベロッパーズガイド';
         }
       });
+    }
+    {
+      const subject = new Subject();
+      subject.subscribe({
+        next: (x) => {
+          console.log(x);
+          this.message2 += x;
+        }
+      });
+      subject.next('Angular');
+      subject.next('デベロッパーズガイド');
     }
   }
 }
