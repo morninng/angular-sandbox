@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 
 import { ClickEventComponent } from './click-event.component';
+import { SubjectComponent } from "./subject.component";
 
 @NgModule({
   declarations: [
-    ClickEventComponent
+    ClickEventComponent,
+    SubjectComponent
   ],
   exports: [
-    ClickEventComponent
+    ClickEventComponent,
+    SubjectComponent
   ]
 })
 export class RxjsModule { }
