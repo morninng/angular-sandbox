@@ -21,6 +21,7 @@ export class SubjectComponent implements OnInit {
         observer.next('a');
         setTimeout(() => {
           observer.next('r');
+          observer.complete();
         }, 1000);
       });
       observable.subscribe({
