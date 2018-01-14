@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-click-event',
@@ -46,7 +46,7 @@ export class ClickEventComponent implements OnInit {
       const buttonClick$ = Observable.fromEvent(buttonElement, 'click');
       buttonClick$
         .throttleTime(1000)
-        .scan(count => count + 1, 0)
+        .scan((count: number) => count + 1, 0)
         .subscribe(count => console.log(`${count} clicked4!!`));
     }
   }
