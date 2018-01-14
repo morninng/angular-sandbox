@@ -8,6 +8,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 })
 export class AppComponent {
   title = 'app';
+  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {}
 }
 
 @Component({
@@ -15,7 +16,8 @@ export class AppComponent {
   template: `
     <span (click)="click()"
       angulartics2On="click"
-      angularticsAction="SectionClick">
+      angularticsAction="SectionClick"
+      [angularticsCategory]="status">
       <ng-content></ng-content>
     </span>`,
   styles: [`
@@ -27,10 +29,11 @@ export class AppComponent {
   `]
 })
 export class AppSectionComponent {
-  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {}
-
   @HostBinding('class.close') isClose = false;
   click() {
     this.isClose = !this.isClose;
+  }
+  get status(): string {
+    return this.isClose ? 'close' : 'open';
   }
 }
