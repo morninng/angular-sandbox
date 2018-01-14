@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { SimpleDiService } from './simple-di.service';
 import { UseClassService } from './use-class.service';
 import { UseValueService, useValueService } from './use-value.service';
-import { UseValueConstToken, USE_VALUE_CONST } from './use-value-const-token';
+import { UseValueConst } from './use-value-const-type';
+import { USE_VALUE_CONST } from './use-value-const-token';
 import { UseExistingService } from './use-existing.service';
 import { DummyService } from './dummy.service';
 import { UseFactoryService } from './use-factory.service';
@@ -30,7 +31,7 @@ import { UseFactoryDiComponent } from './use-factory-di.component';
   providers: [
     { provide: SimpleDiService, useClass: UseClassService },
     { provide: UseValueService, useValue: useValueService },
-    { provide: UseValueConstToken, useValue: USE_VALUE_CONST },
+    { provide: UseValueConst, useValue: USE_VALUE_CONST },
     UseExistingService,
     { provide: DummyService, useExisting: UseExistingService },
     { provide: UseFactoryService, useFactory: useFactoryFn,
