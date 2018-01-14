@@ -10,6 +10,7 @@ import { DummyService } from './dummy.service';
 import { UseFactoryService } from './use-factory.service';
 import { useFactoryFn } from './use-factory.function';
 import { OptionalInjectionService } from './optional-injection.service';
+import { OptionalInjectionDepService } from './optional-injection-dep.service';
 
 import { SimpleDiComponent } from './simple-di.component';
 import { UseValueDiComponent } from './use-value-di.component';
@@ -41,6 +42,7 @@ import { OptionalDiComponent } from './optional-di.component';
     { provide: UseFactoryService, useFactory: useFactoryFn,
       deps: [SimpleDiService, DummyService]
     },
+    OptionalInjectionDepService,
     OptionalInjectionService
   ]
 })
