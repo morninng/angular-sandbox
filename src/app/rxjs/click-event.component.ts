@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
     <button id="button1">クリックイベント（イベントドリブン）</button>
     <button id="button2">クリックイベント（ストリーム）</button>
     <button id="button3">クリックイベント・1秒1回（イベントドリブン）</button>
+    <button id="button4">クリックイベント・1秒1回（ストリーム）</button>
   `
 })
 export class ClickEventComponent implements OnInit {
@@ -39,6 +40,14 @@ export class ClickEventComponent implements OnInit {
           lastClick = Date.now();
         }
       })
+    }
+    {
+      const buttonElement = document.getElementById('button4');
+      const buttonClick$ = Observable.fromEvent(buttonElement, 'click');
+      buttonClick$
+        .throttleTime(1000)
+        .scan(count => count + 1, 0)
+        .subscribe(count => console.log(`${count} clicked4!!`));
     }
   }
 }
