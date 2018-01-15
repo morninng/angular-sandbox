@@ -36,6 +36,6 @@ export class PromiseComponent {
     promise.then((x) => {
       console.log(x);
       this.message2 += x;
-    })
+    });
   }
 }

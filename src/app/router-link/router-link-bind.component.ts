@@ -10,5 +10,5 @@ export class RouterLinkBindComponent {
   list = [
     { id: '1', name: 'detail - 1' },
     { id: '2', name: 'detail - 2' }
-  ]
+  ];
 }
