@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { Angulartics2Module } from "angulartics2";
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -56,6 +57,7 @@ import { DetailComponent } from './detail/detail.component';
   imports: [
     BrowserModule,
     FormsModule,
+    Angulartics2Module,
     AppRoutingModule,
     ParentChildModule,
     NgDirectivesModule,
