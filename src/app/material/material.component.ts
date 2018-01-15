@@ -1,14 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-material',
-  templateUrl: './material.component.html',
-  styleUrls: ['./material.component.css']
+  templateUrl: './material.component.html'
 })
-export class MaterialComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class MaterialComponent {
+  startDate = new Date(1990, 0, 1);
 }

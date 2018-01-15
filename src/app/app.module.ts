@@ -20,6 +20,7 @@ import { AnimationsModule } from './animations/animations.module';
 import { SimpleDiModule } from './simple-di/simple-di.module';
 import { RxjsModule } from './rxjs/rxjs.module';
 import { RouterLinkModule } from './router-link/router-link.module';
+import { MaterialModule } from "./material/material.module";
 
 import { UnderlineDirective } from './underline.directive';
 
@@ -79,7 +80,8 @@ import { DetailComponent } from './detail/detail.component';
     HostSelectorModule,
     SimpleDiModule,
     RxjsModule,
-    RouterLinkModule
+    RouterLinkModule,
+    MaterialModule
   ],
   declarations: [
     AppComponent,
