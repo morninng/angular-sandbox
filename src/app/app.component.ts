@@ -29,6 +29,7 @@ export class AppComponent {
 })
 export class AppSectionComponent {
   @HostBinding('class.close') isClose = false;
+  // TODO should move to AppComponent
   constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {
     console.log('AppSectionComponent');
   }
