@@ -8,7 +8,6 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 })
 export class AppComponent {
   title = 'app';
-  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {}
 }
 
 @Component({
@@ -30,6 +29,9 @@ export class AppComponent {
 })
 export class AppSectionComponent {
   @HostBinding('class.close') isClose = false;
+  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {
+    console.log('AppSectionComponent');
+  }
   click() {
     this.isClose = !this.isClose;
   }
