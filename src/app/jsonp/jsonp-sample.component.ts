@@ -10,7 +10,7 @@ export class JsonpSampleComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.jsonp('assets/data/data.jsonp', 'callback')
+    this.http.jsonp('assets/data.jsonp', 'callback')
       .subscribe(data => this.data = data);
   }
 }
