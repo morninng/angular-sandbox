@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/fromEvent';
+import 'rxjs/add/operator/throttleTime';
+import 'rxjs/add/operator/scan';
 
 @Component({
   selector: 'app-click-event',
@@ -19,19 +22,19 @@ export class ClickEventComponent implements OnInit {
       const buttonElement = document.getElementById('button1');
       buttonElement.addEventListener('click', event => {
         console.log('clicked1');
-      })
+      });
     }
     {
       const buttonElement = document.getElementById('button2');
       const buttonClick$ = Observable.fromEvent(buttonElement, 'click');
       buttonClick$.subscribe(ev => {
         console.log('clicked2');
-      })
+      });
     }
     {
-      var count = 0;
+      let count = 0;
       const rate = 1000;
-      var lastClick = Date.now() - rate;
+      let lastClick = Date.now() - rate;
       const buttonElement = document.getElementById('button3');
       buttonElement.addEventListener('click', event => {
         if (Date.now() - lastClick >= rate) {
@@ -39,7 +42,7 @@ export class ClickEventComponent implements OnInit {
           console.log(`${count} clicked3!!`);
           lastClick = Date.now();
         }
-      })
+      });
     }
     {
       const buttonElement = document.getElementById('button4');
