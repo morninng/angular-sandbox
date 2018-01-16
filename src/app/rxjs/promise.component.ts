@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/fromPromise';
+import 'rxjs/add/observable/of';
 
 @Component({
   selector: 'app-promise',

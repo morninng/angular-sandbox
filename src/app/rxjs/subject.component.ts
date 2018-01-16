@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { Observable, Subject } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs/Subject';
+import 'rxjs/add/observable/from';
 
 @Component({
   selector: 'app-subject',
