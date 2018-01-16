@@ -19,6 +19,7 @@ import { QueriesModule } from './queries/queries.module';
 import { AnimationsModule } from './animations/animations.module';
 import { SimpleDiModule } from './simple-di/simple-di.module';
 import { RxjsModule } from './rxjs/rxjs.module';
+import { JsonpModule } from './jsonp/jsonp.module';
 import { RouterLinkModule } from './router-link/router-link.module';
 
 import { UnderlineDirective } from './underline.directive';
@@ -79,6 +80,7 @@ import { DetailComponent } from './detail/detail.component';
     HostSelectorModule,
     SimpleDiModule,
     RxjsModule,
+    JsonpModule,
     RouterLinkModule
   ],
   declarations: [
