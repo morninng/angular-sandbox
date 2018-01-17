@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { PipesComponent } from "./pipes.component";
 import { SampleNumberPipeComponent } from "./sample-number-pipe.component";
 import { SampleCurrencyPipeComponent } from "./sample-currency-pipe.component";
+import { SampleCasePipeComponent } from "./sample-case-pipe.component";
 
 @NgModule({
   imports: [
@@ -12,12 +13,14 @@ import { SampleCurrencyPipeComponent } from "./sample-currency-pipe.component";
   declarations: [
     PipesComponent,
     SampleNumberPipeComponent,
-    SampleCurrencyPipeComponent
+    SampleCurrencyPipeComponent,
+    SampleCasePipeComponent
   ],
   exports: [
     PipesComponent,
     SampleNumberPipeComponent,
-    SampleCurrencyPipeComponent
+    SampleCurrencyPipeComponent,
+    SampleCasePipeComponent
   ]
 })
 export class PipesModule { }
