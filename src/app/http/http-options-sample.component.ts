@@ -13,12 +13,12 @@ export class HttpOptionsSampleComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    const params  = new HttpParams();
-    const headers = new HttpHeaders();
-    params.append('foo', 'buz');
-    headers.append('X-Api-Token', 'token');
+    let params  = new HttpParams();
+    let headers = new HttpHeaders();
+    params = params.append('foo', 'buz');
+    headers = headers.append('X-Api-Token', 'token');
     const options = {
-      paramas: params,
+      params: params,
       headers: headers
     }
     this.http.get<string[]>('/assets/data/list.json', options)
