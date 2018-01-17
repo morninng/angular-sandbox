@@ -3,7 +3,9 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-jsonp-sample',
-  templateUrl: './jsonp-sample.component.html'
+  template: `
+    <div>{{ data | json }}</div>
+  `
 })
 export class JsonpSampleComponent implements OnInit {
   data;
