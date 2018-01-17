@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-sample-currency-pipe',
   template: `
     <div>
-      <p>{{ euro | currency:'EUR':true:'4.4-4' }}</p>
-      <p>{{ euro | currency:'JPY':true }}</p>
+      <p>{{ euro | currency:'EUR':'symbol':'4.4-4' }}</p>
+      <p>{{ euro | currency:'JPY':'symbol-narrow' }}</p>
     </div>
   `
 })
