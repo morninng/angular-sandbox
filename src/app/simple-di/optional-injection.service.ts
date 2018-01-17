@@ -9,7 +9,7 @@ export class OptionalInjectionService {
     if (this.optionalInjectionDepService) {
       this.message = this.optionalInjectionDepService.message;
     } else {
-      this.message = 'OptionalInjectionDepService is not exist.'
+      this.message = 'OptionalInjectionDepService is not exist.';
     }
   }
 }

@@ -1,6 +1,3 @@
-import { Injectable } from '@angular/core';
-
-@Injectable()
 export class UseValueService {
   constructor(private _id: number, private _name: string) { }
 

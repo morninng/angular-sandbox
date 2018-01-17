@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { Observable, Subject } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs/Subject';
+import 'rxjs/add/observable/from';
 
 @Component({
   selector: 'app-subject',
@@ -18,7 +20,7 @@ export class SubjectComponent {
 
   click1() {
     // Observableの作成
-    const observable = Observable.create((observer:any) => {
+    const observable = Observable.create((observer: any) => {
       observer.next('A');
       observer.next('n');
       observer.next('g');
