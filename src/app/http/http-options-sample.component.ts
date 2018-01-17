@@ -28,7 +28,7 @@ export class HttpOptionsSampleComponent implements OnInit {
         .subscribe(list => this.list1 = list);
     }
     {
-      const options {
+      const options = {
         params: {'foo': 'buz2'},
         headers: {'X-Api-Token': 'token2'}
       }
