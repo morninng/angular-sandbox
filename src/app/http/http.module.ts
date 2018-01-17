@@ -4,6 +4,7 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { HttpSampleComponent } from "./http-sample.component";
 import { HttpFilterSampleComponent } from "./http-filter-sample.component";
+import { HttpOptionsSampleComponent } from "./http-options-sample.component";
 
 @NgModule({
   imports: [
@@ -12,11 +13,13 @@ import { HttpFilterSampleComponent } from "./http-filter-sample.component";
   ],
   declarations: [
     HttpSampleComponent,
-    HttpFilterSampleComponent
+    HttpFilterSampleComponent,
+    HttpOptionsSampleComponent
   ],
   exports: [
     HttpSampleComponent,
-    HttpFilterSampleComponent
+    HttpFilterSampleComponent,
+    HttpOptionsSampleComponent
   ]
 })
 export class HttpModule { }
