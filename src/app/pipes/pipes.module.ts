@@ -5,6 +5,7 @@ import { PipesComponent } from "./pipes.component";
 import { SampleNumberPipeComponent } from "./sample-number-pipe.component";
 import { SampleCurrencyPipeComponent } from "./sample-currency-pipe.component";
 import { SampleCasePipeComponent } from "./sample-case-pipe.component";
+import { SampleDatePipeComponent } from "./sample-date-pipe.component";
 
 @NgModule({
   imports: [
@@ -14,13 +15,15 @@ import { SampleCasePipeComponent } from "./sample-case-pipe.component";
     PipesComponent,
     SampleNumberPipeComponent,
     SampleCurrencyPipeComponent,
-    SampleCasePipeComponent
+    SampleCasePipeComponent,
+    SampleDatePipeComponent
   ],
   exports: [
     PipesComponent,
     SampleNumberPipeComponent,
     SampleCurrencyPipeComponent,
-    SampleCasePipeComponent
+    SampleCasePipeComponent,
+    SampleDatePipeComponent
   ]
 })
 export class PipesModule { }
