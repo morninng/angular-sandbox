@@ -5,10 +5,10 @@ import { DecimalPipe } from '@angular/common';
   selector: 'app-sample-number-pipe',
   template: `
     <div>
-      <p>e (no formatting): {{e}}</p>
-      <p>e (3.1-5): {{e | number: '3.1-5'}}</p>
-      <p>pi (no formatting): {{pi}}</p>
-      <p>pi (4.3-5): {{pi | number: '4.3-5'}}</p>
+      <p>e (no formatting): {{ e }}</p>
+      <p>e (3.1-5): {{ e | number:'3.1-5' }}</p>
+      <p>pi (no formatting): {{ pi }}</p>
+      <p>pi (4.3-5): {{ pi | number:'4.3-5' }}</p>
     </div>
   `
 })

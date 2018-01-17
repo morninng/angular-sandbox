@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { PipesComponent } from "./pipes.component";
 import { SampleNumberPipeComponent } from "./sample-number-pipe.component";
+import { SampleCurrencyPipeComponent } from "./sample-currency-pipe.component";
 
 @NgModule({
   imports: [
@@ -10,11 +11,13 @@ import { SampleNumberPipeComponent } from "./sample-number-pipe.component";
   ],
   declarations: [
     PipesComponent,
-    SampleNumberPipeComponent
+    SampleNumberPipeComponent,
+    SampleCurrencyPipeComponent
   ],
   exports: [
     PipesComponent,
-    SampleNumberPipeComponent
+    SampleNumberPipeComponent,
+    SampleCurrencyPipeComponent
   ]
 })
 export class PipesModule { }
