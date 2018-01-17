@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { ParentChildModule } from './parent-child/parent-child.module';
 import { NgDirectivesModule } from './ng-directives/ng-directives.module';
+import { PipesModule } from "./pipes/pipes.module";
 import { Ch04Module } from './ch04/ch04.module';
 import { SelectorModule } from './selector/selector.module';
 import { InputsModule } from './inputs/inputs.module';
@@ -61,6 +62,7 @@ import { DetailComponent } from './detail/detail.component';
     AppRoutingModule,
     ParentChildModule,
     NgDirectivesModule,
+    PipesModule,
     Ch04Module,
     SelectorModule,
     InputsModule,
@@ -94,7 +96,6 @@ import { DetailComponent } from './detail/detail.component';
     SimpleComponent,
     UnderlineDirective,
     SumComponent,
-    PipesComponent,
     ProvidersComponent,
     TemplateComponent,
     TemplateUrlComponent,
