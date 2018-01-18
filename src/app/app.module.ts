@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { Angulartics2Module } from 'angulartics2';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -16,6 +17,11 @@ import { ViewProvidersModule } from './view-providers/view-providers.module';
 import { ChangeDetectionModule } from './change-detection/change-detection.module';
 import { QueriesModule } from './queries/queries.module';
 import { AnimationsModule } from './animations/animations.module';
+import { SimpleDiModule } from './simple-di/simple-di.module';
+import { RxjsModule } from './rxjs/rxjs.module';
+import { JsonpModule } from './jsonp/jsonp.module';
+import { HttpModule } from "./http/http.module";
+import { RouterLinkModule } from './router-link/router-link.module';
 
 import { UnderlineDirective } from './underline.directive';
 
@@ -48,12 +54,12 @@ import { ViewEncapsulationModule } from './view-encapsulation/view-encapsulation
 import { HostSelectorModule } from './host-selector/host-selector.module';
 import { HomeComponent } from './home/home.component';
 import { DetailComponent } from './detail/detail.component';
-import { RouterLinkModule } from './router-link/router-link.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    Angulartics2Module,
     AppRoutingModule,
     ParentChildModule,
     NgDirectivesModule,
@@ -73,6 +79,10 @@ import { RouterLinkModule } from './router-link/router-link.module';
     ContentChildModule,
     ViewEncapsulationModule,
     HostSelectorModule,
+    SimpleDiModule,
+    RxjsModule,
+    JsonpModule,
+    HttpModule,
     RouterLinkModule
   ],
   declarations: [
