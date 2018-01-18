@@ -47,4 +47,4 @@ deploy:
   on:
     repo: cloudliner/angular-sandbox
     all_branches: true
-    condition: "$TRAVIS_BRANCH != master -o $TRAVIS_BRANCH != staging"
+    condition: $TRAVIS_BRANCH != master || $TRAVIS_BRANCH != staging
