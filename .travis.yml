@@ -23,6 +23,9 @@ before_script:
 - ng build --aot --prod
 script:
 - karma start ./karma.conf.js --single-run
+- echo $TRAVIS_BRANCH
+- test $TRAVIS_BRANCH != master -o $TRAVIS_BRANCH != staging
+- echo $?
 deploy:
 - provider: firebase
   token:
@@ -47,4 +50,4 @@ deploy:
   on:
     repo: cloudliner/angular-sandbox
     all_branches: true
-    condition: $TRAVIS_BRANCH != master -o $TRAVIS_BRANCH != staging
+
