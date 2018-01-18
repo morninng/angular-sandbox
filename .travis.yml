@@ -47,4 +47,4 @@ deploy:
   on:
     repo: cloudliner/angular-sandbox
     all_branches: true
-    condition: NOT branch in (master, staging)
+    condition: NOT branch IN (master, staging)
