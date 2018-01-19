@@ -1,5 +1,6 @@
 import { Component, HostBinding } from '@angular/core';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+import { AppAnalyticsService } from './app-analytics.service';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +9,13 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 })
 export class AppComponent {
   title = 'app';
+  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) { }
 }
 
 @Component({
   selector: '.section',
   template: `
-    <span (click)="click()"
-      angulartics2On="click"
-      angularticsAction="SectionClick"
-      [angularticsCategory]="status">
+    <span (click)="click()">
       <ng-content></ng-content>
     </span>`,
   styles: [`
@@ -29,12 +28,10 @@ export class AppComponent {
 })
 export class AppSectionComponent {
   @HostBinding('class.close') isClose = false;
-  // TODO should move to AppComponent
-  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {
-    console.log('AppSectionComponent');
-  }
+  constructor(private analytics :AppAnalyticsService) { }
   click() {
     this.isClose = !this.isClose;
+    this.analytics.send('SectionClick', this.status);
   }
   get status(): string {
     return this.isClose ? 'close' : 'open';

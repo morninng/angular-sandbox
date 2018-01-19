@@ -25,6 +25,7 @@ import { RouterLinkModule } from './router-link/router-link.module';
 
 import { UnderlineDirective } from './underline.directive';
 
+import { AppAnalyticsService } from './app-analytics.service';
 import { CalcService } from './calc.service';
 
 import { AppComponent } from './app.component';
@@ -109,6 +110,7 @@ import { DetailComponent } from './detail/detail.component';
     DetailComponent
   ],
   providers: [
+    AppAnalyticsService,
     CalcService
   ],
   bootstrap: [AppComponent]
