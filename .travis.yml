@@ -38,9 +38,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: cloudliner/angular-sandbox
-    branch:
-    - master
-    - staging
+    branch: staging
 - provider: heroku
   api_key:
     secure: Oiuri4ttOo3oHAqF0esOM4Bbu2q9wLv3Ki2kUm9zhqm50ZEXz9LSBdIrtnrl18oRw+PRr+4oHVxTXUIcjDEgI9I200nKOtlAQf1QYG6ZwA3uzYXu0fqFM/HPTyp2XO/IaEuhBHMjWtuPYN1I3HTk5LTZRc78LaU20q9PucMSOFtHjHHQrWHihhwlPvh2zcHFuX7JgThBcanHiqs3baitkjoYRqEkBfnx4wZO1ezmwoGvODMdlBm4BXVQn6uZMCekwqACKGY8OK9/4fISif1LpoQJ1CupjcSm5KSnLHk0lUP2MyFqxuOEgCfre39GhNs/9ZvgNrrZODbRNHAq/Nv17S6Rpv61333YGkLiy4xWZrsjszLeDckYPhWPooLiOhifZTOfFtuIi11POJvU3YUiQSMS67fgyDJTfW0gXrih5A7vzzIcp57xzQa5u7CKoUGsT2u49wwKIJoz6DWOjCLD9we1xLDL5qWAEYTrF7vr+QzQ3RC0w3i90EE9ukqsjL2pTvrruNAKWiJU4NT00p42vQWuUvRGB7X9kuot/S5Vraa292TE3+PgphqFINY0j0klaDVaHeRFygND6ZNs6WDLWLQcIQwcGoZy8oD0tDlKWBYPGV0ScQD77inVTm5RAJaqZ3GbOe/Q9n/spVmcERakGdz+TNr+8jixImfLTjjdfRg=
@@ -49,3 +47,4 @@ deploy:
   on:
     repo: cloudliner/angular-sandbox
     all_branches: true
+    condition: $TRAVIS_BRANCH != master && $TRAVIS_BRANCH != staging
