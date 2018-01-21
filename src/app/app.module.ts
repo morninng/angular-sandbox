@@ -20,10 +20,13 @@ import { QueriesModule } from './queries/queries.module';
 import { AnimationsModule } from './animations/animations.module';
 import { SimpleDiModule } from './simple-di/simple-di.module';
 import { RxjsModule } from './rxjs/rxjs.module';
+import { JsonpModule } from './jsonp/jsonp.module';
+import { HttpModule } from "./http/http.module";
 import { RouterLinkModule } from './router-link/router-link.module';
 
 import { UnderlineDirective } from './underline.directive';
 
+import { AppAnalyticsService } from './app-analytics.service';
 import { CalcService } from './calc.service';
 
 import { AppComponent } from './app.component';
@@ -81,6 +84,8 @@ import { DetailComponent } from './detail/detail.component';
     HostSelectorModule,
     SimpleDiModule,
     RxjsModule,
+    JsonpModule,
+    HttpModule,
     RouterLinkModule
   ],
   declarations: [
@@ -106,6 +111,7 @@ import { DetailComponent } from './detail/detail.component';
     DetailComponent
   ],
   providers: [
+    AppAnalyticsService,
     CalcService
   ],
   bootstrap: [AppComponent]
