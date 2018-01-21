@@ -8,6 +8,7 @@ import { SampleCasePipeComponent } from "./sample-case-pipe.component";
 import { SampleDatePipeComponent } from "./sample-date-pipe.component";
 import { SamplePercentPipeComponent } from "./sample-percent-pipe.component";
 import { SampleJsonPipeComponent } from "./sample-json-pipe.component";
+import { SampleSlicePipeComponent } from "./sample-slice-pipe.component";
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { SampleJsonPipeComponent } from "./sample-json-pipe.component";
     SampleCasePipeComponent,
     SampleDatePipeComponent,
     SamplePercentPipeComponent,
-    SampleJsonPipeComponent
+    SampleJsonPipeComponent,
+    SampleSlicePipeComponent
   ],
   exports: [
     PipesComponent,
@@ -29,7 +31,8 @@ import { SampleJsonPipeComponent } from "./sample-json-pipe.component";
     SampleCasePipeComponent,
     SampleDatePipeComponent,
     SamplePercentPipeComponent,
-    SampleJsonPipeComponent
+    SampleJsonPipeComponent,
+    SampleSlicePipeComponent
   ]
 })
 export class PipesModule { }
