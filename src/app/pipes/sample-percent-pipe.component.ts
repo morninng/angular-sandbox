@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
       <p>A: {{ a | percent }}</p>
       <p>B: {{ b | percent:'1.3-9' }}</p>
     </div>
-  `,
-  styles: []
+  `
 })
 export class SamplePercentPipeComponent {
   a = 0.2577711;
