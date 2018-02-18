@@ -19,9 +19,8 @@ jobs:
           name: Build
           command: npm run ng build --aot --prod
       - run:
-          name: Test
-          command: karma start ./karma.conf.js --single-run
+          name: Deploy
+          command: aws s3 sync dist s3://angular-sandbox/ --include "*" --acl public-read --cache-control "max-age=3600" --delete
       - run:
           name: Lint
           command: npm run ng lint
-
