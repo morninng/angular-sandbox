@@ -9,18 +9,18 @@ jobs:
       - restore_cache:
           key: dependencies-{{ checksum "package.json" }}
       - run: 
-          name: install
+          name: Install
           command: npm install
       - save_cache:
           key: dependencies-{{ checksum "package.json" }}
           paths:
             - ./node_modules
       - run:
-          name: build
+          name: Build
           command: npm run ng build --aot --prod
       - run:
-          name: test
-          command: npm run karma start ./karma.conf.js --single-run
-      - run:
-          name: lint
+          name: Lint
           command: npm run ng lint
+      - run:
+          name: Test
+          command: karma start ./karma.conf.js --single-run
