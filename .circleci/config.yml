@@ -19,8 +19,13 @@ jobs:
           name: Build
           command: npm run ng build --aot --prod
       - run:
-          name: Lint
-          command: npm run ng lint
+          name: Running X virtual framebuffer
+          command: Xvfb :99 -screen 0 1280x1024x24
+          background: true
       - run:
           name: Test
           command: karma start ./karma.conf.js --single-run
+      - run:
+          name: Lint
+          command: npm run ng lint
+
