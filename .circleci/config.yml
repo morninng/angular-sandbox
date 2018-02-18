@@ -10,17 +10,17 @@ jobs:
           key: dependencies-{{ checksum "package.json" }}
       - run: 
           name: install
-          command: npm install -g @angular/cli && npm install
+          command: npm install
       - save_cache:
           key: dependencies-{{ checksum "package.json" }}
           paths:
             - ./node_modules
       - run:
           name: build
-          command: ng build --aot --prod
+          command: npm run ng build --aot --prod
       - run:
           name: test
-          command: karma start ./karma.conf.js --single-run
+          command: npm run karma start ./karma.conf.js --single-run
       - run:
           name: lint
-          command: ng lint
+          command: npm run ng lint
