@@ -9,13 +9,8 @@ jobs:
       - restore_cache:
           key: dependencies-{{ checksum "package.json" }}
       - run: 
-          name: install npm
-          command:
-            - npm install
-      - run: 
-          name: install angular-cli
-          command:
-            - npm install angular-cli@latest -g
+          name: install
+          command: npm install angular-cli@latest -g && npm install
       - save_cache:
           key: dependencies-{{ checksum "package.json" }}
           paths:
