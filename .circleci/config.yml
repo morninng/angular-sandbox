@@ -1,18 +1,26 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/angular-cli-circleci
     docker:
       - image: circleci/node:7.10-browsers
-    working_directory: ~/repo
     steps:
       - checkout
       - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
-      - run: npm install
+          key: dependencies-{{ checksum "package.json" }}
+      - run: 
+          name: install
+          command: npm install
       - save_cache:
+          key: dependencies-{{ checksum "package.json" }}
           paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-      - run: karma start ./karma.conf.js --single-run
+            - ./node_modules
+      - run:
+          name: build
+          command: ng build --aot --prod
+      - run:
+          name: test
+          command: karma start ./karma.conf.js --single-run
+      - run:
+          name: lint
+          command: ng lint
