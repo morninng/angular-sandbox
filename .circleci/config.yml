@@ -17,7 +17,7 @@ jobs:
             - ./node_modules
       - run:
           name: Build
-          command: npm run ng build --aot --prod
+          command: npm run ng build -- --aot --prod
       - run:
           name: Deploy
           command: |
