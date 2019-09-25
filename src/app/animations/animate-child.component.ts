@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, transition, animate, style, query, animateChild } from '@angular/animations';
-
+ 
 @Component({
   selector: 'app-animate-child',
   template: `
